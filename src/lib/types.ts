@@ -2,7 +2,7 @@ import type React from 'react';
 
 export type PersonalInfo = {
     name: string;
-    title: string;
+    titles: string[];
     location: string;
     email: string;
     phone: string;

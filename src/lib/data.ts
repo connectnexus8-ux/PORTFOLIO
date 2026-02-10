@@ -2,11 +2,11 @@ import { type PersonalInfo, type SkillCategory, type Project, type Experience, t
 
 export const personalInfo: PersonalInfo = {
     name: 'Drashti Kahanpara',
-    title: 'MERN Stack Developer',
+    titles: ['Senior UI/UX Developer', 'Front-End Developer', 'UI Designer', 'UX Designer'],
     location: 'Ahmedabad, India',
     email: 'drashtikahanpara@example.com',
     phone: '+91 1234567890',
-    summary: 'A passionate MERN stack developer with expertise in building dynamic and responsive web applications. Proven ability to translate complex requirements into user-friendly features. Eager to leverage modern web technologies to create intuitive and efficient solutions.',
+    summary: 'A passionate and creative developer specializing in UI/UX and front-end development. I love crafting beautiful, intuitive, and highly functional user experiences. Eager to leverage modern web technologies to create elegant and efficient solutions.',
     socials: {
         linkedin: 'https://www.linkedin.com/in/drashtikahanpara',
         github: 'https://github.com/drashtikahanpara',
