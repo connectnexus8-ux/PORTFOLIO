@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Github, Linkedin, ChevronDown } from 'lucide-react';
 import { personalInfo } from '@/lib/data';
+import ParticleBackground from '@/components/effects/particle-background';
 
 const Hero = () => {
   const [titleIndex, setTitleIndex] = useState(0);
@@ -43,7 +44,7 @@ const Hero = () => {
 
   return (
     <section className="relative flex h-screen min-h-[700px] w-full flex-col items-center justify-center overflow-hidden bg-background text-center">
-      <div className="absolute inset-0 z-0 h-full w-full bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+      <ParticleBackground />
       <div className="container relative z-10 mx-auto px-4 md:px-6">
         <h1 className="bg-gradient-to-r from-cyan-400 to-fuchsia-500 bg-clip-text bg-[length:200%_auto] animate-gradient font-headline text-5xl font-bold tracking-tight text-transparent sm:text-6xl md:text-7xl lg:text-8xl">
           {name}
@@ -69,7 +70,7 @@ const Hero = () => {
           </Button>
         </div>
       </div>
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10">
          <p className="text-sm text-muted-foreground">Scroll down to discover more</p>
          <ChevronDown className="mx-auto mt-2 h-6 w-6 animate-bounce text-muted-foreground" />
       </div>
