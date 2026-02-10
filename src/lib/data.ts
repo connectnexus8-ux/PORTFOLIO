@@ -113,10 +113,8 @@ export const experience: Experience[] = [
         period: '03/2025 - Present',
         location: 'Gandhinagar',
         description: [
-            'Lead the end-to-end design and development of responsive, high-traffic web interfaces using React.js and TypeScript, ensuring 100% alignment between Figma prototypes and production code.',
-            'Architected and maintained a comprehensive Design System and reusable component library, reducing design-to-development handoff time by 90%.',
-            'Optimized front-end performance and accessibility (WCAG), resulting in a smoother user experience and improved Core Web Vitals for brand identity projects.',
-            'Collaborated closely with stakeholders to transform complex business requirements into intuitive, user-centered wireframes and high-fidelity mockups using Figma and Adobe Creative Suite.'
+            'Led end-to-end development of responsive, high-traffic React.js & TypeScript interfaces with pixel-perfect Figma alignment.',
+            'Built a reusable design system, optimized performance & accessibility, and translated complex requirements into user-friendly designs.'
         ]
     },
     {
