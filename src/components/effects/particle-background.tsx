@@ -15,15 +15,6 @@ const ParticleBackground = () => {
     let particlesArray: Particle[] = [];
     const numberOfParticles = 100;
 
-    const setCanvasSize = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-      particlesArray = [];
-      init();
-    };
-    
-    setCanvasSize();
-
     class Particle {
       x: number;
       y: number;
@@ -60,6 +51,13 @@ const ParticleBackground = () => {
         ctx.fill();
       }
     }
+    
+    const setCanvasSize = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      particlesArray = [];
+      init();
+    };
 
     function init() {
       for (let i = 0; i < numberOfParticles; i++) {
@@ -99,6 +97,8 @@ const ParticleBackground = () => {
       connect();
       requestAnimationFrame(animate);
     }
+    
+    setCanvasSize();
     
     window.addEventListener('resize', setCanvasSize);
     
