@@ -152,6 +152,11 @@ export const achievements: Achievement[] = [
 
 export const education: Education[] = [
     {
+        degree: 'Bachelor of Engineering (BE), Information Technology',
+        institution: 'Gujarat Technological University (GTU)',
+        period: '2022 - 2026'
+    },
+    {
         degree: 'Master of Design (M.Des.) in Interaction Design',
         institution: 'National Institute of Design',
         period: '2017 - 2019'
