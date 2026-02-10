@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
+import { personalInfo } from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: "Drashti Kahanpara | MERN Stack Developer",
-  description: 'Portfolio of Drashti Kahanpara, MERN Stack Developer',
+  title: `${personalInfo.name} | Software Developer`,
+  description: `Portfolio of ${personalInfo.name}, Software Developer`,
 };
 
 export default function RootLayout({

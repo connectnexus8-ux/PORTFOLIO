@@ -1,26 +1,43 @@
-import { type PersonalInfo, type SkillCategory, type Project, type Experience, type Achievement, type Education } from './types';
+import { type PersonalInfo, type SkillCategory, type Project, type Experience, type Achievement, type Education, type AboutCard } from './types';
+import { Code, Heart, Coffee, Award } from 'lucide-react';
 
 export const personalInfo: PersonalInfo = {
-    name: 'Drashti Kahanpara',
+    name: 'Venisha Kalola',
     titles: [
-        'Senior ui/ux designer',
-        'Front-End Developer', 
-        'UI Designer', 
-        'UX Designer',
-        'Web Developer Associate',
-        'Service Designer',
-        'User Experience Architecture Senior Analyst',
-        'User Experience Engineering Senior Manager'
+        'Software Developer',
+        'MERN Stack Developer',
+        'Flutter Developer',
     ],
     location: 'Ahmedabad, India',
-    email: 'drashtikahanpara@example.com',
+    email: 'venishakalola@example.com',
     phone: '+91 1234567890',
-    summary: 'A passionate and creative developer specializing in UI/UX and front-end development. I love crafting beautiful, intuitive, and highly functional user experiences. Eager to leverage modern web technologies to create elegant and efficient solutions.',
+    summary: `I'm a passionate Software Developer specializing in MERN stack and Flutter development. Currently pursuing my B.Tech in Computer Engineering at Sardar Patel Institute of Technology with a minor in Management and Finance from S.P. Jain Institute.
+My journey in tech has been driven by a desire to create impactful solutions. From developing QR code-based applications that enhance hotel guest experiences to building health-focused mobile apps, I'm constantly seeking new challenges.
+When I'm not coding, you can find me mentoring students, participating in hackathons, or volunteering. I believe in using technology to make a positive difference in people's lives.`,
     socials: {
-        linkedin: 'https://www.linkedin.com/in/drashtikahanpara',
-        github: 'https://github.com/drashtikahanpara',
+        linkedin: 'https://www.linkedin.com/in/venishakalola',
+        github: 'https://github.com/venishakalola',
     }
 };
+
+export const aboutCards: AboutCard[] = [
+    {
+        icon: Code,
+        text: 'Solved 600+ questions on LeetCode with a 100+ day streak',
+    },
+    {
+        icon: Heart,
+        text: 'Volunteered at NGO Abhyudaya providing education to school children',
+    },
+    {
+        icon: Coffee,
+        text: 'Taught 11th-12th grade Science Students at Arihant Carmel Classes',
+    },
+    {
+        icon: Award,
+        text: '4x Hackathon Winner including the Bit N Build International Hackathon and 1x Ideathon Winner',
+    }
+];
 
 export const skills: SkillCategory[] = [
   {
@@ -32,6 +49,7 @@ export const skills: SkillCategory[] = [
       { name: 'HTML5' },
       { name: 'CSS3 / SASS' },
       { name: 'Tailwind CSS' },
+      { name: 'Flutter' },
     ],
   },
   {
@@ -50,7 +68,6 @@ export const skills: SkillCategory[] = [
     skills: [
       { name: 'Git & GitHub' },
       { name: 'npm / yarn' },
-      { name: 'Webpack' },
       { name: 'Figma' },
       { name: 'Postman' },
       { name: 'Agile/Scrum' },
@@ -64,7 +81,7 @@ export const projects: Project[] = [
     title: 'E-Commerce Platform',
     description: 'A full-stack e-commerce website with features like product catalog, shopping cart, user authentication, and order management using the MERN stack.',
     tags: ['React.js', 'Node.js', 'MongoDB', 'Express.js'],
-    githubUrl: 'https://github.com/drashtikahanpara',
+    githubUrl: 'https://github.com/venishakalola',
     liveUrl: '#',
   },
   {
@@ -72,7 +89,7 @@ export const projects: Project[] = [
     title: 'Social Media Dashboard',
     description: 'A responsive dashboard for content creators to manage posts, view analytics, and engage with their audience across multiple platforms.',
     tags: ['React.js', 'Data Visualization', 'API Integration'],
-    githubUrl: 'https://github.com/drashtikahanpara',
+    githubUrl: 'https://github.com/venishakalola',
     liveUrl: '#',
   },
   {
@@ -80,7 +97,7 @@ export const projects: Project[] = [
     title: 'Task Management App',
     description: 'A collaborative task management tool that allows teams to create, assign, and track tasks with real-time updates.',
     tags: ['React.js', 'Firebase', 'Real-time', 'UI/UX'],
-    githubUrl: 'https://github.com/drashtikahanpara',
+    githubUrl: 'https://github.com/venishakalola',
     liveUrl: '#',
   }
 ];
@@ -131,8 +148,13 @@ export const achievements: Achievement[] = [
 
 export const education: Education[] = [
     {
-        degree: 'Bachelor of Engineering in Information Technology',
-        institution: 'Gujarat Technological University',
-        period: '2018 - 2022'
+        degree: 'Bachelor of Technology in Computer Engineering',
+        institution: 'Sardar Patel Institute of Technology',
+        period: '2021 - 2025'
+    },
+    {
+        degree: 'Minor in Management and Finance',
+        institution: 'S.P. Jain Institute',
+        period: '2022 - 2024'
     }
 ]

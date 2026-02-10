@@ -44,3 +44,14 @@ export type Achievement = {
   description: string;
   year: string;
 };
+
+export type Education = {
+    degree: string;
+    institution: string;
+    period: string;
+};
+
+export type AboutCard = {
+    icon: React.ElementType;
+    text: string;
+};

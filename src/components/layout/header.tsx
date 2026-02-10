@@ -10,7 +10,6 @@ import { personalInfo } from '@/lib/data';
 const navLinks = [
   { href: '#about', label: 'About', icon: User },
   { href: '#skills', label: 'Skills', icon: Code },
-  { href: '#experience', label: 'Experience', icon: Briefcase },
   { href: '#projects', label: 'Projects', icon: FolderKanban },
   { href: '#achievements', label: 'Achievements', icon: Trophy },
   { href: '#contact', label: 'Contact', icon: Mail },
