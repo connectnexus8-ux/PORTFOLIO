@@ -31,8 +31,8 @@
       "imageHint": "education dashboard"
     },
     {
-      "id": "venisha-profile",
-      "description": "A profile photo of Venisha Kalola",
+      "id": "drashti-profile",
+      "description": "A profile photo of Drashti Khanpara",
       "imageUrl": "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZmlsZSUyMHBob3RvfGVufDB8fHx8MTc3MDcwNzg2OXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "profile photo"
     }

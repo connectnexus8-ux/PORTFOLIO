@@ -7,7 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { Briefcase, CheckCircle, GraduationCap } from 'lucide-react';
 
 const About = () => {
-    const profileImage = PlaceHolderImages.find(img => img.id === 'venisha-profile');
+    const profileImage = PlaceHolderImages.find(img => img.id === 'drashti-profile');
 
     return (
         <section id="about" className="bg-muted/50 py-24 sm:py-32">
