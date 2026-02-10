@@ -100,11 +100,16 @@ export default {
           '50%': { backgroundPosition: '100% 50%' },
           '100%': { backgroundPosition: '0% 50%' },
         },
+        'blink': {
+            '0%, 100%': { borderColor: 'transparent' },
+            '50%': { borderColor: 'hsl(var(--primary))' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'gradient': 'animated-gradient 6s ease infinite',
+        'blink': 'blink 1s step-end infinite',
       },
     },
   },
