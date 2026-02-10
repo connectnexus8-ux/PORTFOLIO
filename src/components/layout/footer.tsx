@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="bg-background border-t border-border">
       <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 py-8 sm:flex-row md:px-6">
         <p className="text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} Venisha Kalola. All rights reserved.
+          &copy; {new Date().getFullYear()} {personalInfo.name}. All rights reserved.
         </p>
         <div className="flex items-center gap-4">
           <Link href={personalInfo.socials.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">

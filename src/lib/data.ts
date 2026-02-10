@@ -55,7 +55,7 @@ export const projects: Project[] = [
     title: 'E-Commerce Platform',
     description: 'A full-stack e-commerce website with features like product catalog, shopping cart, user authentication, and order management using the MERN stack.',
     tags: ['React.js', 'Node.js', 'MongoDB', 'Express.js'],
-    githubUrl: 'https://github.com/Drashti1605',
+    githubUrl: 'https://github.com/venishakalola',
     liveUrl: '#',
   },
   {
@@ -63,7 +63,7 @@ export const projects: Project[] = [
     title: 'Social Media Dashboard',
     description: 'A responsive dashboard for content creators to manage posts, view analytics, and engage with their audience across multiple platforms.',
     tags: ['React.js', 'Data Visualization', 'API Integration'],
-    githubUrl: 'https://github.com/Drashti1605',
+    githubUrl: 'https://github.com/venishakalola',
     liveUrl: '#',
   },
   {
@@ -71,7 +71,7 @@ export const projects: Project[] = [
     title: 'Task Management App',
     description: 'A collaborative task management tool that allows teams to create, assign, and track tasks with real-time updates.',
     tags: ['React.js', 'Firebase', 'Real-time', 'UI/UX'],
-    githubUrl: 'https://github.com/Drashti1605',
+    githubUrl: 'https://github.com/venishakalola',
     liveUrl: '#',
   }
 ];

@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, User, Code, Briefcase, FolderKanban, Trophy, Mail } from 'lucide-react';
+import { personalInfo } from '@/lib/data';
 
 const navLinks = [
   { href: '#about', label: 'About', icon: User },
@@ -18,6 +19,7 @@ const navLinks = [
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const firstName = personalInfo.name.split(' ')[0];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,7 +38,7 @@ const Header = () => {
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2 text-xl font-bold">
             <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-                Venisha
+                {firstName}
             </span>
         </Link>
         <nav className="hidden items-center gap-1 md:flex">
@@ -64,7 +66,7 @@ const Header = () => {
               <div className="flex flex-col gap-6 p-6">
                 <Link href="/" className="flex items-center gap-2 text-xl font-bold" onClick={() => setIsOpen(false)}>
                     <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-                        Venisha
+                        {firstName}
                     </span>
                 </Link>
                 <nav className="flex flex-col gap-4">

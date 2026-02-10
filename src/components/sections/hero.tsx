@@ -9,7 +9,7 @@ const Hero = () => {
     <section className="relative flex h-screen min-h-[700px] w-full flex-col items-center justify-center overflow-hidden bg-background text-center">
       <div className="absolute inset-0 z-0 h-full w-full bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
       <div className="container relative z-10 mx-auto px-4 md:px-6">
-        <h1 className="bg-gradient-to-r from-cyan-400 to-fuchsia-500 bg-clip-text font-headline text-5xl font-bold tracking-tight text-transparent sm:text-6xl md:text-7xl lg:text-8xl">
+        <h1 className="bg-gradient-to-r from-cyan-400 to-fuchsia-500 bg-clip-text bg-[length:200%_auto] animate-gradient font-headline text-5xl font-bold tracking-tight text-transparent sm:text-6xl md:text-7xl lg:text-8xl">
           {personalInfo.name}
         </h1>
         <p className="mx-auto mt-4 max-w-3xl text-lg text-muted-foreground sm:text-xl md:text-2xl">
