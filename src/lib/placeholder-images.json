@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "social-media-app",
+      "description": "A social media app interface showing profiles and connections.",
+      "imageUrl": "https://images.unsplash.com/photo-1603145733146-ae562a55031e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzb2NpYWwlMjBuZXR3b3JrfGVufDB8fHx8MTc3MDcwNDM5OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "social network"
+    },
+    {
+      "id": "dairy-hrms",
+      "description": "A dashboard interface for an HR management system, showing employee data and charts.",
+      "imageUrl": "https://images.unsplash.com/photo-1759536430218-7053ccf40fe9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGFzaGJvYXJkJTIwY2hhcnR8ZW58MHx8fHwxNzcwNjM2NDAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dashboard chart"
+    },
+    {
+      "id": "saas-dashboard",
+      "description": "A clean dashboard for a Screen as a Service application.",
+      "imageUrl": "https://picsum.photos/seed/3/600/338",
+      "imageHint": "saas interface"
+    },
+    {
+      "id": "potato-app",
+      "description": "A mobile app interface for farmers, showing weather and crop information.",
+      "imageUrl": "https://images.unsplash.com/photo-1635574901622-8014a3ddead5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtb2JpbGUlMjBmYXJtaW5nfGVufDB8fHx8MTc3MDcwNDM5OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mobile farming"
+    },
+    {
+      "id": "training-dashboard",
+      "description": "A dashboard for a training center, showing course progress and schedules.",
+      "imageUrl": "https://images.unsplash.com/photo-1723877896976-2526130e50c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxlZHVjYXRpb24lMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzcwNzA0Mzk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "education dashboard"
+    }
+  ]
 }
