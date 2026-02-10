@@ -123,10 +123,8 @@ export const experience: Experience[] = [
         period: '07/2024 - 03/2025',
         location: 'Ahmedabad, India',
         description: [
-            'Transitioned from design to development, gaining hands-on experience in building interactive web components using JavaScript (JSX) and React.js.',
-            'Designed intuitive user interfaces using Figma and Canva, focusing on usability and modern aesthetic trends for client projects.',
-            'Optimized front-end performance by implementing efficient CSS and modern JavaScript practices during the development of responsive web pages.',
-            'Utilized npm and version control tools to manage dependencies and streamline the development workflow within a collaborative team environment.'
+            'Transitioned from design to development, building interactive React (JSX) components and responsive web interfaces.',
+            'Designed intuitive UIs and optimized front-end performance using modern CSS, JavaScript, npm, and version control tools.'
         ]
     }
 ];
