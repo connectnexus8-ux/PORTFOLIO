@@ -71,7 +71,7 @@ const About = () => {
                                 </Card>
                             </TabsContent>
                             <TabsContent value="timeline" className="flex-grow">
-                                <div className="mt-4 relative h-full rounded-lg border bg-card text-card-foreground shadow-sm">
+                                <div className="mt-4 relative h-full">
                                         <div className="relative p-6">
                                             <div className="absolute left-6 top-0 h-full w-px bg-border"></div>
                                             <div className="space-y-8">
@@ -79,7 +79,7 @@ const About = () => {
                                                 {education.length > 0 && (
                                                     <div className="relative pl-8">
                                                         <div className="absolute left-0 top-1.5 flex h-10 w-10 -translate-x-1/2 items-center justify-center rounded-full bg-background">
-                                                            <div className="flex h-6 w-6 items-center justify-center rounded-full bg-primary text-primary-foreground">
+                                                            <div className="flex h-6 w-6 items-center justify-center rounded-full bg-card text-primary">
                                                                 <GraduationCap className="h-4 w-4" />
                                                             </div>
                                                         </div>
@@ -94,7 +94,7 @@ const About = () => {
                                                 {experience.map((job, index) => (
                                                     <div key={`job-${index}`} className="relative pl-8">
                                                         <div className="absolute left-0 top-1.5 flex h-10 w-10 -translate-x-1/2 items-center justify-center rounded-full bg-background">
-                                                            <div className="flex h-6 w-6 items-center justify-center rounded-full bg-primary text-primary-foreground">
+                                                            <div className="flex h-6 w-6 items-center justify-center rounded-full bg-card text-primary">
                                                                 <Briefcase className="h-4 w-4" />
                                                             </div>
                                                         </div>
