@@ -3,7 +3,7 @@ import { type PersonalInfo, type SkillCategory, type Project, type Experience, t
 export const personalInfo: PersonalInfo = {
     name: 'Drashti Kahanpara',
     titles: [
-        'Senior UI/UX Developer', 
+        'SENIOR UI/UX DESIGNER',
         'Front-End Developer', 
         'UI Designer', 
         'UX Designer',
