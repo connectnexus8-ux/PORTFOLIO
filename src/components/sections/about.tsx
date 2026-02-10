@@ -34,10 +34,10 @@ const About = () => {
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 flex-grow">
                             {aboutCards.map((card, index) => (
-                                <Card key={index} className="bg-card/50 h-full">
-                                    <CardContent className="p-4 flex items-start gap-4">
-                                        <card.icon className="h-8 w-8 text-primary mt-1 flex-shrink-0" />
-                                        <p className="text-sm text-muted-foreground">{card.text}</p>
+                                <Card key={index} className="bg-card h-full">
+                                    <CardContent className="p-6 flex items-center gap-4 h-full">
+                                        <card.icon className="h-6 w-6 text-primary flex-shrink-0" />
+                                        <p className="text-sm text-card-foreground">{card.text}</p>
                                     </CardContent>
                                 </Card>
                             ))}
