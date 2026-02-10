@@ -1,15 +1,15 @@
 import { type PersonalInfo, type SkillCategory, type Project, type Experience, type Achievement } from './types';
 
 export const personalInfo: PersonalInfo = {
-    name: 'Venisha Kalola',
+    name: 'Drashti Kahanpara',
     title: 'MERN Stack Developer',
     location: 'Ahmedabad, India',
-    email: 'venishakalola@example.com',
+    email: 'drashtikahanpara@example.com',
     phone: '+91 1234567890',
     summary: 'A passionate MERN stack developer with expertise in building dynamic and responsive web applications. Proven ability to translate complex requirements into user-friendly features. Eager to leverage modern web technologies to create intuitive and efficient solutions.',
     socials: {
-        linkedin: 'https://www.linkedin.com/in/venishakalola',
-        github: 'https://github.com/venishakalola',
+        linkedin: 'https://www.linkedin.com/in/drashtikahanpara',
+        github: 'https://github.com/drashtikahanpara',
     }
 };
 
@@ -55,7 +55,7 @@ export const projects: Project[] = [
     title: 'E-Commerce Platform',
     description: 'A full-stack e-commerce website with features like product catalog, shopping cart, user authentication, and order management using the MERN stack.',
     tags: ['React.js', 'Node.js', 'MongoDB', 'Express.js'],
-    githubUrl: 'https://github.com/venishakalola',
+    githubUrl: 'https://github.com/drashtikahanpara',
     liveUrl: '#',
   },
   {
@@ -63,7 +63,7 @@ export const projects: Project[] = [
     title: 'Social Media Dashboard',
     description: 'A responsive dashboard for content creators to manage posts, view analytics, and engage with their audience across multiple platforms.',
     tags: ['React.js', 'Data Visualization', 'API Integration'],
-    githubUrl: 'https://github.com/venishakalola',
+    githubUrl: 'https://github.com/drashtikahanpara',
     liveUrl: '#',
   },
   {
@@ -71,7 +71,7 @@ export const projects: Project[] = [
     title: 'Task Management App',
     description: 'A collaborative task management tool that allows teams to create, assign, and track tasks with real-time updates.',
     tags: ['React.js', 'Firebase', 'Real-time', 'UI/UX'],
-    githubUrl: 'https://github.com/venishakalola',
+    githubUrl: 'https://github.com/drashtikahanpara',
     liveUrl: '#',
   }
 ];
