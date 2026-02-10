@@ -108,26 +108,27 @@ export const projects: Project[] = [
 
 export const experience: Experience[] = [
     {
-        company: 'Creative Labs',
-        role: 'Senior UI/UX Designer',
-        period: '2021 - Present',
-        location: 'Remote',
+        company: 'AekAds',
+        role: 'Sr. UI/UX developer & Front - End developer',
+        period: '03/2025 - Present',
+        location: 'Gandhinagar',
         description: [
-            'Led the design of a new flagship product, from concept to launch.',
-            'Conducted user research and testing to inform design decisions.',
-            'Created wireframes, prototypes, and high-fidelity mockups.',
-            'Collaborated with developers to ensure faithful implementation of designs.',
+            'Lead the end-to-end design and development of responsive, high-traffic web interfaces using React.js and TypeScript, ensuring 100% alignment between Figma prototypes and production code.',
+            'Architected and maintained a comprehensive Design System and reusable component library, reducing design-to-development handoff time by 90%.',
+            'Optimized front-end performance and accessibility (WCAG), resulting in a smoother user experience and improved Core Web Vitals for brand identity projects.',
+            'Collaborated closely with stakeholders to transform complex business requirements into intuitive, user-centered wireframes and high-fidelity mockups using Figma and Adobe Creative Suite.'
         ]
     },
     {
-        company: 'Design Hub',
-        role: 'UI/UX Designer',
-        period: '2019 - 2021',
+        company: 'Drop Techno Lab',
+        role: 'UI/UX Designer & Front-End Developer',
+        period: '07/2024 - 03/2025',
         location: 'Ahmedabad, India',
         description: [
-            'Designed and improved user interfaces for various web and mobile applications.',
-            'Worked closely with product managers to define feature requirements.',
-            'Contributed to the development of a new design system.',
+            'Transitioned from design to development, gaining hands-on experience in building interactive web components using JavaScript (JSX) and React.js.',
+            'Designed intuitive user interfaces using Figma and Canva, focusing on usability and modern aesthetic trends for client projects.',
+            'Optimized front-end performance by implementing efficient CSS and modern JavaScript practices during the development of responsive web pages.',
+            'Utilized npm and version control tools to manage dependencies and streamline the development workflow within a collaborative team environment.'
         ]
     }
 ];
