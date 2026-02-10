@@ -1,10 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
-import { personalInfo, aboutCards, experience, education } from '@/lib/data';
+import { personalInfo, aboutCards, experience } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Briefcase, CheckCircle, GraduationCap } from 'lucide-react';
+import { Briefcase } from 'lucide-react';
 
 const About = () => {
     const profileImage = PlaceHolderImages.find(img => img.id === 'drashti-profile');
@@ -71,21 +71,6 @@ const About = () => {
                             </TabsContent>
                             <TabsContent value="timeline">
                                 <div className="space-y-12 mt-4 max-h-[700px] overflow-y-auto pr-2">
-                                    {/* Education section */}
-                                    <div>
-                                        <h3 className="text-2xl font-bold mb-6 flex items-center gap-3"><GraduationCap className="h-6 w-6 text-primary" /> Education</h3>
-                                        <div className="space-y-6">
-                                            {education.map((edu, index) => (
-                                                <Card key={index} className="flex flex-col">
-                                                <CardHeader>
-                                                  <CardTitle>{edu.degree}</CardTitle>
-                                                  <CardDescription className="text-base text-muted-foreground">{edu.institution}</CardDescription>
-                                                  <p className="text-sm text-muted-foreground">{edu.period}</p>
-                                                </CardHeader>
-                                              </Card>
-                                            ))}
-                                        </div>
-                                    </div>
                                     {/* Experience section */}
                                     <div>
                                          <h3 className="text-2xl font-bold mb-8 flex items-center gap-3"><Briefcase className="h-6 w-6 text-primary" /> Work Experience</h3>

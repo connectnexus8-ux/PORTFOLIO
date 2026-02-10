@@ -1,4 +1,4 @@
-import { type PersonalInfo, type SkillCategory, type Project, type Experience, type Achievement, type Education, type AboutCard } from './types';
+import { type PersonalInfo, type SkillCategory, type Project, type Experience, type Achievement, type AboutCard } from './types';
 import { Code, Heart, Coffee, Award } from 'lucide-react';
 
 export const personalInfo: PersonalInfo = {
@@ -150,21 +150,3 @@ export const achievements: Achievement[] = [
     year: 'Ongoing',
   },
 ];
-
-export const education: Education[] = [
-    {
-        degree: 'Bachelor of Engineering (BE), Information Technology',
-        institution: 'Gujarat Technological University (GTU)',
-        period: '2022 - 2026'
-    },
-    {
-        degree: 'Master of Design (M.Des.) in Interaction Design',
-        institution: 'National Institute of Design',
-        period: '2017 - 2019'
-    },
-    {
-        degree: 'Bachelor of Engineering in Information Technology',
-        institution: 'Nirma University',
-        period: '2013 - 2017'
-    }
-]
