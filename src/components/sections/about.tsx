@@ -1,10 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
-import { personalInfo, aboutCards, experience } from '@/lib/data';
+import { personalInfo, aboutCards, experience, education } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Briefcase } from 'lucide-react';
+import { Briefcase, GraduationCap } from 'lucide-react';
 
 const About = () => {
     const profileImage = PlaceHolderImages.find(img => img.id === 'drashti-profile');
@@ -94,6 +94,27 @@ const About = () => {
                                                         </ul>
                                                     </div>
 
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                     {/* Education section */}
+                                     <div>
+                                         <h3 className="text-2xl font-bold mb-8 flex items-center gap-3"><GraduationCap className="h-6 w-6 text-primary" /> Education</h3>
+                                        <div className="relative">
+                                            <div className="absolute left-3 top-0 h-full w-0.5 bg-border -translate-x-1/2"></div>
+                                            {education.map((edu, index) => (
+                                                <div key={index} className="group relative mb-8 pl-10">
+                                                     <div className="absolute left-0 top-1 z-10 -translate-x-1/2">
+                                                        <div className="flex h-6 w-6 items-center justify-center rounded-full bg-primary text-primary-foreground">
+                                                            <GraduationCap className="h-4 w-4" />
+                                                        </div>
+                                                    </div>
+                                                    <div className="rounded-lg bg-card p-4 shadow-sm transition-shadow duration-300 hover:shadow-md border">
+                                                        <p className="text-sm text-muted-foreground">{edu.period}</p>
+                                                        <h4 className="text-md font-bold text-primary">{edu.degree}</h4>
+                                                        <p className="font-semibold text-sm">{edu.institution}</p>
+                                                    </div>
                                                 </div>
                                             ))}
                                         </div>

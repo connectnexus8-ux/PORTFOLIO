@@ -1,4 +1,4 @@
-import { type PersonalInfo, type SkillCategory, type Project, type Experience, type Achievement, type AboutCard } from './types';
+import { type PersonalInfo, type SkillCategory, type Project, type Experience, type Achievement, type AboutCard, type Education } from './types';
 import { Code, Heart, Coffee, Award } from 'lucide-react';
 
 export const personalInfo: PersonalInfo = {
@@ -126,6 +126,14 @@ export const experience: Experience[] = [
             'Transitioned from design to development, building interactive React (JSX) components and responsive web interfaces.',
             'Designed intuitive UIs and optimized front-end performance using modern CSS, JavaScript, npm, and version control tools.'
         ]
+    }
+];
+
+export const education: Education[] = [
+    {
+        institution: 'Gujarat Technological University GTU',
+        degree: 'Bachelor of Engineering (BE), Information Technology',
+        period: '2022 - 2026',
     }
 ];
 
