@@ -2,7 +2,6 @@
 'use server';
 
 import { z } from 'zod';
-import { styleGuideReview, type StyleGuideReviewInput } from '@/ai/flows/style-guide-review';
 
 // Contact Form Action
 const contactSchema = z.object({
@@ -48,33 +47,4 @@ export async function sendEmailAction(
     message: 'Your message has been sent successfully!',
     success: true,
   };
-}
-
-// AI Style Guide Review Action
-const styleGuideReviewSchema = z.object({
-  figmaFileUri: z.string().min(1, 'File is required.'),
-  styleGuide: z.string().min(10, 'Style guide description is required.'),
-});
-
-export type ReviewState = {
-  feedback?: string;
-  error?: string;
-};
-
-export async function reviewStyleGuideAction(
-  input: StyleGuideReviewInput
-): Promise<ReviewState> {
-  const validatedFields = styleGuideReviewSchema.safeParse(input);
-
-  if (!validatedFields.success) {
-    return { error: 'Invalid input. Please check your file and style guide description.' };
-  }
-  
-  try {
-    const result = await styleGuideReview(validatedFields.data);
-    return { feedback: result.feedback };
-  } catch (error) {
-    console.error('AI Style Guide Review Error:', error);
-    return { error: 'An error occurred while reviewing the style guide. Please try again.' };
-  }
 }

@@ -5,8 +5,7 @@ import About from '@/components/sections/about';
 import Projects from '@/components/sections/projects';
 import Skills from '@/components/sections/skills';
 import Experience from '@/components/sections/experience';
-import Education from '@/components/sections/education';
-import StyleGuideReview from '@/components/sections/style-guide-review';
+import Achievements from '@/components/sections/achievements';
 import Contact from '@/components/sections/contact';
 
 export default function Home() {
@@ -16,11 +15,10 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <About />
-        <Projects />
         <Skills />
         <Experience />
-        <Education />
-        <StyleGuideReview />
+        <Projects />
+        <Achievements />
         <Contact />
       </main>
       <Footer />

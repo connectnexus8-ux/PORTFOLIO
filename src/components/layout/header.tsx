@@ -4,15 +4,15 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, Code } from 'lucide-react';
+import { Menu, User, Code, Briefcase, FolderKanban, Trophy, Mail } from 'lucide-react';
 
 const navLinks = [
-  { href: '#about', label: 'About' },
-  { href: '#projects', label: 'Projects' },
-  { href: '#skills', label: 'Skills' },
-  { href: '#experience', label: 'Experience' },
-  { href: '#ai-review', label: 'AI Review' },
-  { href: '#contact', label: 'Contact' },
+  { href: '#about', label: 'About', icon: User },
+  { href: '#skills', label: 'Skills', icon: Code },
+  { href: '#experience', label: 'Experience', icon: Briefcase },
+  { href: '#projects', label: 'Projects', icon: FolderKanban },
+  { href: '#achievements', label: 'Achievements', icon: Trophy },
+  { href: '#contact', label: 'Contact', icon: Mail },
 ];
 
 const Header = () => {
@@ -34,19 +34,22 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <Link href="/" className="flex items-center gap-2 font-headline text-xl font-bold">
-          <Code className="h-6 w-6 text-primary" />
-          <span>Drashti K.</span>
+        <Link href="/" className="flex items-center gap-2 text-xl font-bold">
+            <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                Venisha
+            </span>
         </Link>
-        <nav className="hidden items-center gap-6 md:flex">
+        <nav className="hidden items-center gap-1 md:flex">
           {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-sm font-medium text-foreground/80 transition-colors hover:text-primary"
-            >
-              {link.label}
-            </Link>
+            <Button key={link.href} variant="ghost" asChild>
+              <Link
+                href={link.href}
+                className="text-sm font-medium text-foreground/80 transition-colors hover:text-primary"
+              >
+                <link.icon className="mr-2 h-4 w-4" />
+                {link.label}
+              </Link>
+            </Button>
           ))}
         </nav>
         <div className="md:hidden">
@@ -57,21 +60,23 @@ const Header = () => {
                 <span className="sr-only">Toggle Menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px]">
+            <SheetContent side="right" className="w-[300px] bg-background">
               <div className="flex flex-col gap-6 p-6">
-                <Link href="/" className="flex items-center gap-2 font-headline text-xl font-bold" onClick={() => setIsOpen(false)}>
-                  <Code className="h-6 w-6 text-primary" />
-                  <span>Drashti K.</span>
+                <Link href="/" className="flex items-center gap-2 text-xl font-bold" onClick={() => setIsOpen(false)}>
+                    <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                        Venisha
+                    </span>
                 </Link>
                 <nav className="flex flex-col gap-4">
                   {navLinks.map((link) => (
                     <Link
                       key={link.href}
                       href={link.href}
-                      className="text-lg font-medium text-foreground/80 transition-colors hover:text-primary"
+                      className="flex items-center text-lg font-medium text-foreground/80 transition-colors hover:text-primary"
                       onClick={() => setIsOpen(false)}
                     >
-                      {link.label}
+                        <link.icon className="mr-2 h-5 w-5" />
+                        {link.label}
                     </Link>
                   ))}
                 </nav>

@@ -35,12 +35,12 @@ export type Experience = {
   company: string;
   role: string;
   period: string;
-  location: string;
+  location:string;
   description: string[];
 };
 
-export type Education = {
-  institution: string;
-  degree: string;
-  period: string;
+export type Achievement = {
+  title: string;
+  description: string;
+  year: string;
 };
