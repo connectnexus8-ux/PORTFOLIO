@@ -87,11 +87,13 @@ const About = () => {
                                                         <p className="text-sm text-muted-foreground">{job.period}</p>
                                                         <h4 className="text-md font-bold text-primary">{job.role}</h4>
                                                         <p className="mb-2 font-semibold text-sm">{job.company} - {job.location}</p>
-                                                        <ul className="space-y-1 text-sm text-muted-foreground list-disc pl-4">
-                                                            {job.description.map((point, i) => (
-                                                                <li key={i}>{point}</li>
-                                                            ))}
-                                                        </ul>
+                                                        {job.description && job.description.length > 0 && (
+                                                            <ul className="space-y-1 text-sm text-muted-foreground list-disc pl-4">
+                                                                {job.description.map((point, i) => (
+                                                                    <li key={i}>{point}</li>
+                                                                ))}
+                                                            </ul>
+                                                        )}
                                                     </div>
 
                                                 </div>

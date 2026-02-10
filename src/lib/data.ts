@@ -112,10 +112,7 @@ export const experience: Experience[] = [
         role: 'Sr. UI/UX developer & Front - End developer',
         period: '03/2025 - Present',
         location: 'Gandhinagar',
-        description: [
-            'Led end-to-end development of responsive, high-traffic React.js & TypeScript interfaces with pixel-perfect Figma alignment.',
-            'Built a reusable design system, optimized performance & accessibility, and translated complex requirements into user-friendly designs.'
-        ]
+        description: []
     },
     {
         company: 'Drop Techno Lab',
