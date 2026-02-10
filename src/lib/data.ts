@@ -16,12 +16,14 @@ export const personalInfo: PersonalInfo = {
     location: 'Ahmedabad, India',
     email: 'drashtikhanpara@example.com',
     phone: '+91 1234567890',
-    summary: `I'm a passionate and creative designer with a knack for crafting intuitive and beautiful user experiences. I thrive on solving complex problems and turning ideas into elegant, user-friendly designs.
-My journey in design has been a continuous process of learning and evolving, always staying on top of the latest trends and technologies to create modern and effective solutions.
-I believe that great design is not just about aesthetics, but about creating a seamless and enjoyable interaction between the user and the product.`,
+    summary: `I am a senior UI/UX and Front-End professional with a strong balance of design thinking, engineering expertise, and leadership experience, focused on building scalable, user-centered digital products.
+I bring hands-on experience across UX architecture, interface design, and front-end development, translating complex business and user requirements into intuitive, high-performance solutions. From research and journey mapping to interaction design and modern front-end implementation, I ensure consistency, accessibility, and usability across platforms.
+With a deep understanding of UX engineering principles, component-driven design systems, and modern web technologies, I collaborate closely with product, engineering, and stakeholder teams to bridge the gap between design vision and technical execution.
+In leadership and senior analyst roles, I drive experience strategy, mentor teams, define UX standards, and influence product direction through data-informed insights and design excellence. I focus on aligning user needs with business goals while scaling design and development processes efficiently.
+I believe exceptional experiences are created at the intersection of strategy, design, and technology, where thoughtful interactions, clean architecture, and strong execution come together to deliver meaningful impact.`,
     socials: {
-        linkedin: 'https://www.linkedin.com/in/drashtikhanpara',
-        github: 'https://github.com/drashtikhanpara',
+        linkedin: 'https://www.linkedin.com/in/drashti-khanpara-3a3b83253/',
+        github: 'https://github.com/Drashti1605',
     }
 };
 
@@ -85,7 +87,7 @@ export const projects: Project[] = [
     title: 'SaaS Dashboard UX/UI',
     description: 'A complete redesign of a SaaS dashboard, focusing on a cleaner user interface and improved user experience for data visualization and management.',
     tags: ['UX Design', 'UI Design', 'Figma', 'SaaS'],
-    githubUrl: 'https://github.com/drashtikhanpara',
+    githubUrl: 'https://github.com/Drashti1605',
     liveUrl: '#',
   },
   {
@@ -93,7 +95,7 @@ export const projects: Project[] = [
     title: 'Health & Wellness Mobile App',
     description: 'Designed a mobile application to help users track their fitness goals, and log meals. Focused on creating a simple and motivating user experience.',
     tags: ['UI Design', 'Mobile App', 'Figma', 'Prototyping'],
-    githubUrl: 'https://github.com/drashtikhanpara',
+    githubUrl: 'https://github.com/Drashti1605',
     liveUrl: '#',
   },
   {
@@ -101,7 +103,7 @@ export const projects: Project[] = [
     title: 'HRMS Portal Redesign',
     description: 'Led the UI/UX redesign for an enterprise Human Resource Management System. The goal was to simplify complex workflows for employee management and payroll.',
     tags: ['Design System', 'UI/UX', 'Enterprise', 'Figma'],
-    githubUrl: 'https://github.com/drashtikhanpara',
+    githubUrl: 'https://github.com/Drashti1605',
     liveUrl: '#',
   }
 ];
