@@ -1,8 +1,17 @@
-import { type PersonalInfo, type SkillCategory, type Project, type Experience, type Achievement } from './types';
+import { type PersonalInfo, type SkillCategory, type Project, type Experience, type Achievement, type Education } from './types';
 
 export const personalInfo: PersonalInfo = {
     name: 'Drashti Kahanpara',
-    titles: ['Senior UI/UX Developer', 'Front-End Developer', 'UI Designer', 'UX Designer'],
+    titles: [
+        'Senior UI/UX Developer', 
+        'Front-End Developer', 
+        'UI Designer', 
+        'UX Designer',
+        'Web Developer Associate',
+        'Service Designer',
+        'User Experience Architecture Senior Analyst',
+        'User Experience Engineering Senior Manager'
+    ],
     location: 'Ahmedabad, India',
     email: 'drashtikahanpara@example.com',
     phone: '+91 1234567890',
@@ -119,3 +128,11 @@ export const achievements: Achievement[] = [
     year: 'Ongoing',
   },
 ];
+
+export const education: Education[] = [
+    {
+        degree: 'Bachelor of Engineering in Information Technology',
+        institution: 'Gujarat Technological University',
+        period: '2018 - 2022'
+    }
+]
