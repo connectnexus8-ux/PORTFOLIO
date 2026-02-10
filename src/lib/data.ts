@@ -119,10 +119,7 @@ export const experience: Experience[] = [
         role: 'UI/UX Designer & Front-End Developer',
         period: '07/2024 - 03/2025',
         location: 'Ahmedabad, India',
-        description: [
-            'Transitioned from design to development, building interactive React (JSX) components and responsive web interfaces.',
-            'Designed intuitive UIs and optimized front-end performance using modern CSS, JavaScript, npm, and version control tools.'
-        ]
+        description: []
     }
 ];
 
