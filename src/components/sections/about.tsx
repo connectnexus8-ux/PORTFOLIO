@@ -70,7 +70,7 @@ const About = () => {
                                 </Card>
                             </TabsContent>
                             <TabsContent value="timeline">
-                                <div className="mt-4 max-h-[700px] overflow-y-auto pr-2">
+                                <div className="mt-4">
                                     <div className="relative">
                                         <div className="absolute left-3 top-3 h-full w-0.5 bg-border -translate-x-1/2"></div>
                                         
