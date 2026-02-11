@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
-import { personalInfo, aboutCards, experience, education } from '@/lib/data';
+import { personalInfo, experience, education } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Card } from '@/components/ui/card';
 import { Briefcase, GraduationCap } from 'lucide-react';
 
 const About = () => {
@@ -31,16 +31,6 @@ const About = () => {
                                     <p key={index}>{paragraph}</p>
                                 ))}
                             </div>
-                        </div>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 flex-grow">
-                            {aboutCards.map((card, index) => (
-                                <Card key={index} className="bg-card h-full">
-                                    <CardContent className="p-6 flex items-center gap-4 h-full">
-                                        <card.icon className="h-6 w-6 text-primary flex-shrink-0" />
-                                        <p className="text-sm text-card-foreground">{card.text}</p>
-                                    </CardContent>
-                                </Card>
-                            ))}
                         </div>
                     </div>
 

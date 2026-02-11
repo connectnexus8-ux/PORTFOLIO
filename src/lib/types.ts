@@ -50,8 +50,3 @@ export type Achievement = {
   description: string;
   year: string;
 };
-
-export type AboutCard = {
-    icon: React.ElementType;
-    text: string;
-};

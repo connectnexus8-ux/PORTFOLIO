@@ -1,5 +1,4 @@
-import { type PersonalInfo, type SkillCategory, type Project, type Experience, type Achievement, type AboutCard, type Education } from './types';
-import { Code, Heart, Coffee, Award } from 'lucide-react';
+import { type PersonalInfo, type SkillCategory, type Project, type Experience, type Achievement, type Education } from './types';
 
 export const personalInfo: PersonalInfo = {
     name: 'Drashti Khanpara',
@@ -26,25 +25,6 @@ I believe exceptional experiences are created at the intersection of strategy, d
         github: 'https://github.com/Drashti1605',
     }
 };
-
-export const aboutCards: AboutCard[] = [
-    {
-        icon: Award,
-        text: 'Winner of multiple design awards for innovative UI/UX solutions.',
-    },
-    {
-        icon: Heart,
-        text: 'Passionate about accessible design and creating inclusive digital experiences.',
-    },
-    {
-        icon: Coffee,
-        text: 'Always sketching and exploring new design concepts in my spare time.',
-    },
-    {
-        icon: Code,
-        text: 'Proficient in turning complex user requirements into simple, elegant designs.',
-    }
-];
 
 export const skills: SkillCategory[] = [
   {
