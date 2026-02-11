@@ -1,6 +1,4 @@
 import React from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
 import { skills } from '@/lib/data';
 
 const Skills = () => {
@@ -16,22 +14,15 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {skills.map((category) => (
-            <Card key={category.title}>
-              <CardHeader>
-                <CardTitle>{category.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2">
-                  {category.skills.map((skill) => (
-                    <Badge key={skill.name} variant="outline" className="text-sm">
-                      {skill.name}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+        <div className="mx-auto max-w-5xl flex flex-col items-center space-y-6">
+          {skills.map((category, categoryIndex) => (
+            <div key={categoryIndex} className="flex flex-wrap justify-center gap-x-6 gap-y-4">
+              {category.skills.map((skill, skillIndex) => (
+                <span key={skillIndex} className="border-b border-foreground/50 pb-1 text-lg text-muted-foreground transition-colors hover:text-foreground hover:border-primary">
+                  {skill.name}
+                </span>
+              ))}
+            </div>
           ))}
         </div>
       </div>

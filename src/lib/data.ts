@@ -28,35 +28,57 @@ I believe exceptional experiences are created at the intersection of strategy, d
 
 export const skills: SkillCategory[] = [
   {
-    title: 'Design & Prototyping',
+    title: 'UX & Research',
     skills: [
-      { name: 'Figma' },
-      { name: 'Adobe XD' },
-      { name: 'Sketch' },
-      { name: 'Principle' },
-      { name: 'User Research' },
+      { name: 'UX Research & User Flows' },
+      { name: 'UX Research' },
+      { name: 'User Flow Design' },
       { name: 'Wireframing' },
     ],
   },
   {
-    title: 'Front-End',
+    title: 'Design',
     skills: [
-      { name: 'HTML5 & CSS3' },
-      { name: 'JavaScript (ES6+)' },
-      { name: 'React.js' },
-      { name: 'Tailwind CSS' },
-      { name: 'SASS' },
-      { name: 'Storybook' },
+      { name: 'Interactive Prototyping' },
+      { name: 'UI Design' },
+      { name: 'Visual Design Systems' },
+      { name: 'Responsive Web Design' },
     ],
   },
   {
-    title: 'Tools & Workflow',
+    title: 'Frontend',
     skills: [
-      { name: 'Git & GitHub' },
-      { name: 'Jira' },
-      { name: 'Agile/Scrum' },
-      { name: 'Design Systems' },
-      { name: 'A/B Testing' },
+      { name: 'Frontend Development' },
+      { name: 'HTML5' },
+      { name: 'CSS3' },
+      { name: 'JavaScript' },
+      { name: 'React.js Fundamentals' },
+    ],
+  },
+  {
+    title: 'Development',
+    skills: [
+      { name: 'Component-Based UI Development' },
+      { name: 'API Integration' },
+      { name: 'REST APIs' },
+      { name: 'Performance Optimization' },
+    ],
+  },
+  {
+    title: 'Tools & Collaboration',
+    skills: [
+      { name: 'Version Control' },
+      { name: 'Git' },
+      { name: 'GitHub' },
+      { name: 'Problem Solving' },
+      { name: 'Debugging' },
+      { name: 'Collaboration with Designers' },
+    ],
+  },
+    {
+    title: 'Collaboration',
+    skills: [
+      { name: 'Collaboration with Developers' },
     ],
   },
 ];
