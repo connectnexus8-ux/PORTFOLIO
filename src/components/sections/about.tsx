@@ -44,7 +44,7 @@ const About = () => {
                             <TabsContent value="photo" className="flex-grow">
                                 <Card className="mt-4 overflow-hidden border-2 border-primary/20 shadow-lg h-full flex flex-col">
                                     {profileImage && (
-                                        <div className="relative w-full flex-grow min-h-[400px]">
+                                        <div className="relative w-full flex-grow min-h-[350px]">
                                             <Image
                                                 src={profileImage.imageUrl}
                                                 alt={personalInfo.name}
