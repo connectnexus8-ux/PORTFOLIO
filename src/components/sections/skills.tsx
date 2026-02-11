@@ -1,5 +1,32 @@
 import React from 'react';
 import { skills } from '@/lib/data';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import { Code2, GitFork, Microscope, Palette, ServerCog, Users } from 'lucide-react';
+import { cn } from '@/lib/utils';
+
+const iconMap: Record<string, React.ElementType> = {
+    'UX & Research': Microscope,
+    'Design': Palette,
+    'Frontend': Code2,
+    'Development': ServerCog,
+    'Tools & Collaboration': GitFork,
+    'Collaboration': Users,
+};
+
+const colorCycle = [
+    {
+        text: 'text-primary',
+        bg: 'bg-primary'
+    },
+    {
+        text: 'text-accent',
+        bg: 'bg-accent'
+    },
+    {
+        text: 'text-pink-500',
+        bg: 'bg-pink-500'
+    },
+];
 
 const Skills = () => {
   return (
@@ -14,16 +41,32 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="mx-auto max-w-5xl flex flex-col items-center space-y-6">
-          {skills.map((category, categoryIndex) => (
-            <div key={categoryIndex} className="flex flex-wrap justify-center gap-x-6 gap-y-4">
-              {category.skills.map((skill, skillIndex) => (
-                <span key={skillIndex} className="border-b border-foreground/50 pb-1 text-lg text-muted-foreground transition-colors hover:text-foreground hover:border-primary">
-                  {skill.name}
-                </span>
-              ))}
-            </div>
-          ))}
+        <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {skills.map((category, index) => {
+            const Icon = iconMap[category.title] ?? Code2;
+            const { text: textColor, bg: dotColor } = colorCycle[index % colorCycle.length];
+            
+            return (
+              <Card key={index} className="flex flex-col bg-card/60 border border-border/20 shadow-lg backdrop-blur-sm">
+                <CardHeader className="flex flex-row items-center gap-4 pb-4">
+                  <div className={cn("flex h-10 w-10 items-center justify-center rounded-lg bg-background", textColor)}>
+                    <Icon className="h-6 w-6" />
+                  </div>
+                  <CardTitle className={cn("font-headline text-lg", textColor)}>{category.title}</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <ul className="space-y-2">
+                    {category.skills.map((skill, skillIndex) => (
+                      <li key={skillIndex} className="flex items-center gap-3">
+                        <span className={cn("h-2 w-2 rounded-full", dotColor)}></span>
+                        <span className="text-base text-muted-foreground">{skill.name}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
       </div>
     </section>
