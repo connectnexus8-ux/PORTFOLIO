@@ -17,15 +17,18 @@ const iconMap: Record<string, React.ElementType> = {
 const colorCycle = [
     {
         text: 'text-primary',
-        bg: 'bg-primary'
+        bg: 'bg-primary',
+        hsl: 'var(--primary)',
     },
     {
         text: 'text-accent',
-        bg: 'bg-accent'
+        bg: 'bg-accent',
+        hsl: 'var(--accent)',
     },
     {
         text: 'text-pink-500',
-        bg: 'bg-pink-500'
+        bg: 'bg-pink-500',
+        hsl: '336 83% 61%',
     },
 ];
 
@@ -45,10 +48,10 @@ const Skills = () => {
         <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2 lg:grid-cols-3">
           {skills.map((category, index) => {
             const Icon = iconMap[category.title] ?? Code2;
-            const { text: textColor, bg: dotColor } = colorCycle[index % colorCycle.length];
+            const { text: textColor, bg: dotColor, hsl } = colorCycle[index % colorCycle.length];
             
             return (
-              <AnimatedSkillCard key={index}>
+              <AnimatedSkillCard key={index} glowHsl={hsl}>
                 <CardHeader className="flex flex-row items-center gap-4 pb-4">
                   <div className={cn("flex h-10 w-10 items-center justify-center rounded-lg bg-background", textColor)}>
                     <Icon className="h-6 w-6" />
