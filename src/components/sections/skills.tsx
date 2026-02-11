@@ -1,8 +1,9 @@
 import React from 'react';
 import { skills } from '@/lib/data';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import { CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Code2, GitFork, Microscope, Palette, ServerCog, Users } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import AnimatedSkillCard from '@/components/ui/animated-skill-card';
 
 const iconMap: Record<string, React.ElementType> = {
     'UX & Research': Microscope,
@@ -47,7 +48,7 @@ const Skills = () => {
             const { text: textColor, bg: dotColor } = colorCycle[index % colorCycle.length];
             
             return (
-              <Card key={index} className="flex flex-col bg-card/60 border border-border/20 shadow-lg backdrop-blur-sm">
+              <AnimatedSkillCard key={index}>
                 <CardHeader className="flex flex-row items-center gap-4 pb-4">
                   <div className={cn("flex h-10 w-10 items-center justify-center rounded-lg bg-background", textColor)}>
                     <Icon className="h-6 w-6" />
@@ -64,7 +65,7 @@ const Skills = () => {
                     ))}
                   </ul>
                 </CardContent>
-              </Card>
+              </AnimatedSkillCard>
             );
           })}
         </div>
