@@ -26,7 +26,7 @@ const AnimatedSkillCard = ({ children, className, glowHsl }: AnimatedSkillCardPr
 
     const rotateX = (y - rect.height / 2) / 15;
     const rotateY = (x - rect.width / 2) / -15;
-    setTransform(`perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.03, 1.03, 1.03)`);
+    setTransform(`perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.05, 1.05, 1.05)`);
   };
 
   const handleMouseLeave = () => {
@@ -48,7 +48,7 @@ const AnimatedSkillCard = ({ children, className, glowHsl }: AnimatedSkillCardPr
       <div
         className="pointer-events-none absolute -inset-px opacity-0 transition-opacity duration-300 group-hover:opacity-100"
         style={{
-          background: `radial-gradient(400px circle at ${position.x}px ${position.y}px, hsla(${glowHsl}, 0.2), transparent)`,
+          background: `radial-gradient(500px circle at ${position.x}px ${position.y}px, hsla(${glowHsl}, 0.4), transparent 80%)`,
         }}
       />
       <div className="relative z-10 flex h-full flex-col">
