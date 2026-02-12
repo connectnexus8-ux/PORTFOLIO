@@ -1,4 +1,4 @@
-import { type PersonalInfo, type SkillCategory, type Project, type Experience, type Achievement, type Education } from './types';
+import { type PersonalInfo, type SkillCategory, type Experience, type Achievement, type Education } from './types';
 
 export const personalInfo: PersonalInfo = {
     name: 'Drashti Khanpara',
@@ -83,47 +83,30 @@ export const skills: SkillCategory[] = [
   },
 ];
 
-export const projects: Project[] = [
-  {
-    id: 'saas-dashboard',
-    title: 'SaaS Dashboard UX/UI',
-    description: 'A complete redesign of a SaaS dashboard, focusing on a cleaner user interface and improved user experience for data visualization and management.',
-    tags: ['UX Design', 'UI Design', 'Figma', 'SaaS'],
-    githubUrl: 'https://github.com/Drashti1605',
-    liveUrl: '#',
-  },
-  {
-    id: 'potato-app',
-    title: 'Health & Wellness Mobile App',
-    description: 'Designed a mobile application to help users track their fitness goals, and log meals. Focused on creating a simple and motivating user experience.',
-    tags: ['UI Design', 'Mobile App', 'Figma', 'Prototyping'],
-    githubUrl: 'https://github.com/Drashti1605',
-    liveUrl: '#',
-  },
-  {
-    id: 'dairy-hrms',
-    title: 'HRMS Portal Redesign',
-    description: 'Led the UI/UX redesign for an enterprise Human Resource Management System. The goal was to simplify complex workflows for employee management and payroll.',
-    tags: ['Design System', 'UI/UX', 'Enterprise', 'Figma'],
-    githubUrl: 'https://github.com/Drashti1605',
-    liveUrl: '#',
-  }
-];
-
 export const experience: Experience[] = [
     {
         company: 'AekAds',
         role: 'Sr. UI/UX developer & Front - End developer',
         period: '03/2025 - Present',
         location: 'Gandhinagar',
-        description: []
+        description: [
+            'Led the design and development of user-centric web applications, improving user satisfaction by 25%.',
+            'Built and maintained a component library in React, increasing development speed and ensuring brand consistency.',
+            'Collaborated with product managers to define requirements and translate them into responsive UI designs and functional frontend code.'
+        ],
+        skills: ['UI/UX Design', 'Frontend Development', 'React.js', 'Design Systems', 'Figma']
     },
     {
         company: 'Drop Techno Lab',
         role: 'UI/UX Designer & Front-End Developer',
         period: '07/2024 - 03/2025',
         location: 'Ahmedabad, India',
-        description: []
+        description: [
+            'Designed and implemented responsive user interfaces for various client projects.',
+            'Created wireframes, mockups, and prototypes to communicate design ideas.',
+            'Worked closely with backend developers to integrate APIs and ensure seamless user experiences.'
+        ],
+        skills: ['HTML/CSS', 'JavaScript', 'UI Design', 'Prototyping', 'API Integration']
     }
 ];
 

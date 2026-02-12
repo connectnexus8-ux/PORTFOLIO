@@ -22,21 +22,13 @@ export type SkillCategory = {
   skills: Skill[];
 };
 
-export type Project = {
-  id: string;
-  title: string;
-  description: string;
-  tags: string[];
-  githubUrl?: string;
-  liveUrl?: string;
-};
-
 export type Experience = {
   company: string;
   role: string;
   period: string;
   location:string;
   description: string[];
+  skills: string[];
 };
 
 export type Education = {
