@@ -189,7 +189,8 @@ export const projects: Project[] = [
         title: 'Abhayam Inventory Management System — Web Application Development',
         description: '• Led the development of a web-based Inventory Management System for Abhayam Polymers to streamline product tracking, stock monitoring, and secure user access.\n• Designed and implemented secure authentication workflows using email-based login and role-based access control to ensure data security and user permission management.\n• Built intuitive inventory management modules enabling users to efficiently add, update, delete, and monitor product stock levels in real time.\n• Developed a responsive and scalable user interface ensuring seamless usability across desktop, tablet, and mobile devices.\n• Structured the system architecture to be maintainable and scalable, supporting future feature expansion and performance optimization.\n• Implemented efficient data handling and real-time database integration to minimize manual errors and improve operational accuracy.\n• Deployed the application using modern cloud hosting practices to ensure reliability, accessibility, and continuous availability.',
         tags: ['UI/UX Design', 'React.js', 'Inventory Management', 'Authentication', 'Responsive Design', 'Real-time Data'],
-        liveUrl: 'https://abhayaminventory.vercel.app/login'
+        liveUrl: 'https://abhayaminventory.vercel.app/login',
+        githubUrl: 'https://github.com/connectnexus8-ux/abhayaminventory'
     },
     {
         title: 'Resume Builder Website – Web Application',
