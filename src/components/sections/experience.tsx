@@ -1,4 +1,6 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import { experience } from '@/lib/data';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Card } from '@/components/ui/card';
@@ -6,6 +8,8 @@ import { Badge } from '@/components/ui/badge';
 import { Building, Calendar, MapPin } from 'lucide-react';
 
 const Experience = () => {
+  const [openItem, setOpenItem] = useState('item-0');
+
   return (
     <section id="experience" className="bg-background py-24 sm:py-32">
       <div className="container mx-auto px-4 md:px-6">
@@ -19,9 +23,20 @@ const Experience = () => {
         </div>
 
         <div className="mx-auto max-w-3xl">
-          <Accordion type="single" collapsible defaultValue="item-0" className="w-full">
+          <Accordion
+            type="single"
+            collapsible
+            className="w-full"
+            value={openItem}
+            onValueChange={(value) => setOpenItem(value ?? '')}
+          >
             {experience.map((job, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border-b-0">
+              <AccordionItem
+                key={index}
+                value={`item-${index}`}
+                className="border-b-0"
+                onMouseEnter={() => setOpenItem(`item-${index}`)}
+              >
                 <Card className="mb-4 overflow-hidden border-border/50 bg-card/80 shadow-sm transition-all duration-300 ease-out has-[[data-state=open]]:border-primary/20 has-[[data-state=open]]:shadow-lg">
                   <AccordionTrigger className="p-6 text-left hover:no-underline">
                     <div className="flex w-full flex-col gap-2">
