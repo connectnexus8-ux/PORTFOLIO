@@ -1,33 +1,18 @@
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Github } from 'lucide-react';
 import { type Project } from '@/lib/types';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 interface ProjectCardProps {
   project: Project;
 }
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
-  const projectImage = PlaceHolderImages.find(p => p.id === project.image);
-
   return (
     <Card className="flex flex-col overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-      {projectImage && (
-        <div className="relative h-48 w-full">
-          <Image
-            src={projectImage.imageUrl}
-            alt={project.title}
-            fill
-            className="object-cover"
-            data-ai-hint={projectImage.imageHint}
-          />
-        </div>
-      )}
       <CardHeader>
         <CardTitle>{project.title}</CardTitle>
       </CardHeader>
