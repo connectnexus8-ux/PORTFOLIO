@@ -9,7 +9,7 @@ const StyleGuideReview = () => {
         <div className="mx-auto max-w-3xl">
           <Card className="overflow-hidden">
             <CardHeader className="bg-primary/5 text-center">
-              <CardTitle className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+              <CardTitle className="font-headline text-3xl font-bold tracking-tight sm:text-4xl bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
                 AI-Powered Style Guide Review
               </CardTitle>
               <CardDescription className="mt-4 text-lg leading-8 text-muted-foreground">

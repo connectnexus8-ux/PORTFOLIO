@@ -14,8 +14,8 @@ const Experience = () => {
     <section id="experience" className="bg-background py-24 sm:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto mb-16 max-w-3xl text-center">
-          <h2 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-            Work <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">Experience</span>
+          <h2 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+            Work Experience
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
             My professional journey and contributions

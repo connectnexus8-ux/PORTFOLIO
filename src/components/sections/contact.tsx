@@ -50,7 +50,7 @@ const Contact = () => {
         <div className="mx-auto max-w-xl">
           <Card>
             <CardHeader className="text-center">
-              <CardTitle className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Get In Touch</CardTitle>
+              <CardTitle className="font-headline text-3xl font-bold tracking-tight sm:text-4xl bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">Get In Touch</CardTitle>
               <CardDescription className="mt-2 text-lg leading-8 text-muted-foreground">
                 Have a project in mind or just want to say hi?
               </CardDescription>
