@@ -167,5 +167,26 @@ export const projects: Project[] = [
         image: 'project-ecommerce',
         liveUrl: 'https://example.com',
         githubUrl: 'https://github.com/Drashti1605/ecommerce'
+    },
+    {
+        title: 'Aookly Networking App & Web Platform',
+        description: 'Led UI/UX design and developed ~50% of the React.js web application, building responsive, component-based interfaces for both mobile and web.',
+        tags: ['UI/UX Design', 'React.js', 'Mobile App', 'Web Platform'],
+        image: 'project-aookly',
+        liveUrl: 'https://play.google.com/store/apps/details?id=com.aookly.networking&pcampaignid=web_share',
+    },
+    {
+        title: 'BKhetiBuddy Admin Panel',
+        description: 'Led UI/UX design and contributed significantly to the React.js frontend development of a responsive admin panel with structured dashboards, focusing on usability and performance.',
+        tags: ['UI/UX Design', 'React.js', 'Admin Panel', 'Dashboards'],
+        image: 'project-khetibuddy',
+        liveUrl: 'https://admin.prod.khetibuddy.com/admin/sys/auth/login',
+    },
+    {
+        title: 'Banas Potato Farmer App & Web Platform',
+        description: 'Led UI/UX design and contributed to ~50% of the React.js development for a user-friendly and responsive app and web platform for potato farmers.',
+        tags: ['UI/UX Design', 'React.js', 'Web Platform', 'Agri-Tech'],
+        image: 'project-banas-potato',
+        liveUrl: 'https://play.google.com/store/apps/details?id=com.banaspotato.farmer&pcampaignid=web_share',
     }
 ];
