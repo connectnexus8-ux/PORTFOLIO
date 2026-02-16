@@ -16,23 +16,26 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
   const isBulleted = project.description.includes('•');
 
   return (
-    <Card className="flex h-full flex-col transition-all duration-300 ease-out hover:shadow-lg hover:-translate-y-1">
+    <Card className="group flex h-full flex-col transition-all duration-300 ease-out hover:shadow-lg hover:-translate-y-1">
       <CardHeader>
         <CardTitle>{project.title}</CardTitle>
       </CardHeader>
       <CardContent className="flex-grow">
-        {isBulleted ? (
-          <ul className="text-muted-foreground list-disc space-y-2 pl-5 text-sm">
-            {project.description
-              .split('• ')
-              .filter((item) => item.trim() !== '')
-              .map((item, index) => (
-                <li key={index}>{item.trim().replace(/\n$/, '')}</li>
-              ))}
-          </ul>
-        ) : (
-          <p className="text-muted-foreground">{project.description}</p>
-        )}
+        <div className="relative max-h-60 overflow-hidden transition-all duration-500 ease-in-out group-hover:max-h-[1000px]">
+          {isBulleted ? (
+            <ul className="text-muted-foreground list-disc space-y-2 pl-5 text-sm">
+              {project.description
+                .split('• ')
+                .filter((item) => item.trim() !== '')
+                .map((item, index) => (
+                  <li key={index}>{item.trim().replace(/\n$/, '')}</li>
+                ))}
+            </ul>
+          ) : (
+            <p className="text-muted-foreground">{project.description}</p>
+          )}
+          <div className="absolute bottom-0 h-16 w-full bg-gradient-to-t from-card to-transparent group-hover:hidden" />
+        </div>
 
         <div className="mt-4 flex flex-wrap gap-2">
           {project.tags.map((tag) => (
