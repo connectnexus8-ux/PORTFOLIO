@@ -16,7 +16,7 @@ import {
 
 
 const Projects = () => {
-  const [isTerminalMode, setIsTerminalMode] = useState(false);
+  const [isTerminalMode, setIsTerminalMode] = useState(true);
 
   return (
     <section id="projects" className="py-24 sm:py-32">
