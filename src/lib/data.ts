@@ -154,23 +154,20 @@ export const achievements: Achievement[] = [
 export const projects: Project[] = [
     {
         title: 'Aookly Networking App & Web Platform',
-        description: 'Led UI/UX design and developed ~50% of the React.js web application, building responsive, component-based interfaces for both mobile and web.',
+        description: 'Led end-to-end UI/UX design for both the mobile application and web platform, creating a consistent, user-centric experience across devices. Conducted user research, defined user flows, and designed wireframes and high-fidelity prototypes to ensure intuitive navigation and seamless interaction. Designed complete visual systems including layout structures, typography, color schemes, and reusable design components to maintain product consistency and scalability. Contributed significantly to the React.js web application development (~50%), building responsive, component-based interfaces using modern front-end practices. Implemented reusable UI components, optimized performance, and ensured cross-device compatibility for both desktop and mobile web experiences. Collaborated closely with developers and stakeholders to translate design concepts into functional, high-quality product features aligned with business and user needs.',
         tags: ['UI/UX Design', 'React.js', 'Mobile App', 'Web Platform'],
-        image: 'project-aookly',
         liveUrl: 'https://play.google.com/store/apps/details?id=com.aookly.networking&pcampaignid=web_share',
     },
     {
         title: 'BKhetiBuddy Admin Panel',
         description: 'Led UI/UX design and contributed significantly to the React.js frontend development of a responsive admin panel with structured dashboards, focusing on usability and performance.',
         tags: ['UI/UX Design', 'React.js', 'Admin Panel', 'Dashboards'],
-        image: 'project-khetibuddy',
         liveUrl: 'https://admin.prod.khetibuddy.com/admin/sys/auth/login',
     },
     {
         title: 'Banas Potato Farmer App & Web Platform',
         description: 'Led UI/UX design and contributed to ~50% of the React.js development for a user-friendly and responsive app and web platform for potato farmers.',
         tags: ['UI/UX Design', 'React.js', 'Web Platform', 'Agri-Tech'],
-        image: 'project-banas-potato',
         liveUrl: 'https://play.google.com/store/apps/details?id=com.banaspotato.farmer&pcampaignid=web_share',
     }
 ];
