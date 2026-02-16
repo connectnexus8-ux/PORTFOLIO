@@ -153,22 +153,6 @@ export const achievements: Achievement[] = [
 
 export const projects: Project[] = [
     {
-        title: 'Portfolio Website',
-        description: 'A personal portfolio website to showcase my skills and projects.',
-        tags: ['Next.js', 'Tailwind CSS', 'TypeScript', 'Framer Motion'],
-        image: 'project-portfolio',
-        liveUrl: 'https://drashtikhanpara.com',
-        githubUrl: 'https://github.com/Drashti1605/portfolio'
-    },
-    {
-        title: 'E-commerce Platform',
-        description: 'A full-featured e-commerce platform with a modern UI.',
-        tags: ['React', 'Redux', 'Node.js', 'Express', 'MongoDB'],
-        image: 'project-ecommerce',
-        liveUrl: 'https://example.com',
-        githubUrl: 'https://github.com/Drashti1605/ecommerce'
-    },
-    {
         title: 'Aookly Networking App & Web Platform',
         description: 'Led UI/UX design and developed ~50% of the React.js web application, building responsive, component-based interfaces for both mobile and web.',
         tags: ['UI/UX Design', 'React.js', 'Mobile App', 'Web Platform'],
