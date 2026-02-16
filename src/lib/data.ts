@@ -134,4 +134,19 @@ export const achievements: Achievement[] = [
     description: 'Mentor aspiring designers on ADPList, helping them build their portfolios and navigate the design industry.',
     year: 'Ongoing',
   },
+  {
+    title: 'Service Designer',
+    description: 'Issued by Udemy.',
+    year: 'May 2024',
+  },
+  {
+    title: 'User Experience Architecture, Senior Analyst',
+    description: 'Issued by Accenture.',
+    year: 'May 2024',
+  },
+    {
+    title: 'User Experience Engineering, Senior Manager',
+    description: 'Issued by Accenture.',
+    year: 'May 2024',
+  },
 ];
