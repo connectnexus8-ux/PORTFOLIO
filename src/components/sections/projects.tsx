@@ -4,7 +4,16 @@ import React, { useState } from 'react';
 import { Switch } from '@/components/ui/switch';
 import { Label } from '@/components/ui/label';
 import ProjectTerminal from '@/components/projects/project-terminal';
-import ProjectGrid from '@/components/projects/project-grid';
+import { projects } from '@/lib/data';
+import ProjectCard from '@/components/projects/project-card';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+
 
 const Projects = () => {
   const [isTerminalMode, setIsTerminalMode] = useState(false);
@@ -31,7 +40,29 @@ const Projects = () => {
         </div>
 
         <div>
-          {isTerminalMode ? <ProjectTerminal onExit={() => setIsTerminalMode(false)} /> : <ProjectGrid />}
+          {isTerminalMode ? (
+            <ProjectTerminal onExit={() => setIsTerminalMode(false)} />
+          ) : (
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full max-w-xs sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl mx-auto"
+            >
+              <CarouselContent className="-ml-4">
+                {projects.map((project, index) => (
+                  <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                     <div className="h-full">
+                        <ProjectCard project={project} />
+                     </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="hidden sm:flex" />
+              <CarouselNext className="hidden sm:flex" />
+            </Carousel>
+          )}
         </div>
       </div>
     </section>
