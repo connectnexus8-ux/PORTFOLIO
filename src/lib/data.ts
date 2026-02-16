@@ -153,6 +153,21 @@ export const achievements: Achievement[] = [
 
 export const projects: Project[] = [
     {
+        title: 'RouteOptimization Management System - UI/UX Design with React.js Implementation',
+        description: '• Led complete UI/UX design including user research, wireframing, user flows, and high-fidelity prototyping to create an intuitive route management dashboard.\n• Designed scalable UI components and visual hierarchy to improve data readability and user efficiency.\n• Contributed to front-end development 50% using React.js, Hooks, and responsive CSS frameworks.\n• Ensured pixel-perfect implementation, performance optimization, and cross-browser compatibility.',
+        tags: ['UI/UX Design', 'React.js', 'Dashboard', 'Route Management'],
+    },
+    {
+        title: 'CMS Admin Platform with Authentication - UI/UX Design & Responsive React.js Development',
+        description: '• Designed complete UI/UX for admin workflows including authentication flows, role-based access, and user management dashboards.\n• Developed reusable design components ensuring design consistency across modules.\n• Contributed to front-end development 50% using React.js and API integrations.\n• Focused on accessibility, usability, and efficient workflow interactions.',
+        tags: ['UI/UX Design', 'React.js', 'Admin Platform', 'CMS', 'Authentication'],
+    },
+    {
+        title: 'Animal BBRC Management Website',
+        description: '• Designed end-to-end UI/UX for data monitoring dashboards, workflows, and reporting interfaces.\n• Created intuitive layouts to simplify complex data visualization.\n• Contributed to front-end development (~50%) using React.js and REST API integrations.\n• Ensured consistent design patterns, scalability, and responsive performance.',
+        tags: ['UI/UX Design', 'React.js', 'Dashboard', 'Data Visualization'],
+    },
+    {
         title: 'Aookly Networking App & Web Platform',
         description: '• Led end-to-end UI/UX design for both the mobile application and web platform, creating a consistent, user-centric experience across devices.\n• Conducted user research, defined user flows, and designed wireframes and high-fidelity prototypes to ensure intuitive navigation and seamless interaction.\n• Designed complete visual systems including layout structures, typography, color schemes, and reusable design components to maintain product consistency and scalability.\n• Contributed significantly to the React.js web application development (~50%), building responsive, component-based interfaces using modern front-end practices.\n• Implemented reusable UI components, optimized performance, and ensured cross-device compatibility for both desktop and mobile web experiences.\n• Collaborated closely with developers and stakeholders to translate design concepts into functional, high-quality product features aligned with business and user needs.',
         tags: ['UI/UX Design', 'React.js', 'Mobile App', 'Web Platform'],
