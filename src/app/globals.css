@@ -10,13 +10,13 @@
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 174 78% 41%;
-    --primary-foreground: 175 100% 10%;
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 98%;
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
-    --accent: 262 85% 56%;
+    --accent: 240 5.9% 10%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
@@ -26,25 +26,25 @@
     --radius: 0.5rem;
   }
   .dark {
-    --background: 240 10% 3.9%;
+    --background: 270 9% 11%;
     --foreground: 0 0% 98%;
-    --card: 240 4.8% 12%;
+    --card: 266 9% 15%;
     --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
+    --popover: 270 9% 11%;
     --popover-foreground: 0 0% 98%;
-    --primary: 174 78% 41%;
-    --primary-foreground: 175 100% 10%;
-    --secondary: 240 3.7% 15.9%;
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 261 8% 22%;
     --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
+    --muted: 261 8% 22%;
     --muted-foreground: 240 5% 64.9%;
-    --accent: 262 85% 56%;
+    --accent: 258 75% 61%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 174 78% 41%;
+    --border: 261 8% 22%;
+    --input: 261 8% 22%;
+    --ring: 262 83% 58%;
   }
 }
 
@@ -55,4 +55,21 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* For custom scrollbar in terminal */
+@layer utilities {
+    .terminal-scrollbar::-webkit-scrollbar {
+        width: 8px;
+    }
+    .terminal-scrollbar::-webkit-scrollbar-track {
+        background: #2a2a2a;
+    }
+    .terminal-scrollbar::-webkit-scrollbar-thumb {
+        background: #555;
+        border-radius: 4px;
+    }
+    .terminal-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #777;
+    }
 }

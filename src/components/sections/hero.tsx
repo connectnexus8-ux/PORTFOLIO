@@ -61,14 +61,6 @@ const Hero = () => {
             <Linkedin className="h-7 w-7 text-muted-foreground transition-colors hover:text-primary" />
           </Link>
         </div>
-        <div className="mt-10">
-          <Button asChild variant="outline" size="lg" className="border-primary/50 text-primary hover:bg-primary/10 hover:text-primary">
-            <Link href="#projects">
-              Explore My Work
-              <ChevronDown className="ml-2 h-5 w-5" />
-            </Link>
-          </Button>
-        </div>
       </div>
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10">
          <p className="text-sm text-muted-foreground">Scroll down to discover more</p>

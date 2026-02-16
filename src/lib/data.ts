@@ -1,4 +1,4 @@
-import { type PersonalInfo, type SkillCategory, type Experience, type Achievement, type Education } from './types';
+import { type PersonalInfo, type SkillCategory, type Experience, type Achievement, type Education, type Project } from './types';
 
 export const personalInfo: PersonalInfo = {
     name: 'Drashti Khanpara',
@@ -149,4 +149,23 @@ export const achievements: Achievement[] = [
     description: 'Issued by Accenture.',
     year: 'May 2024',
   },
+];
+
+export const projects: Project[] = [
+    {
+        title: 'Portfolio Website',
+        description: 'A personal portfolio website to showcase my skills and projects.',
+        tags: ['Next.js', 'Tailwind CSS', 'TypeScript', 'Framer Motion'],
+        image: 'project-portfolio',
+        liveUrl: 'https://drashtikhanpara.com',
+        githubUrl: 'https://github.com/Drashti1605/portfolio'
+    },
+    {
+        title: 'E-commerce Platform',
+        description: 'A full-featured e-commerce platform with a modern UI.',
+        tags: ['React', 'Redux', 'Node.js', 'Express', 'MongoDB'],
+        image: 'project-ecommerce',
+        liveUrl: 'https://example.com',
+        githubUrl: 'https://github.com/Drashti1605/ecommerce'
+    }
 ];

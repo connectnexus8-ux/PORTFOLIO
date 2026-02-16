@@ -42,3 +42,12 @@ export type Achievement = {
   description: string;
   year: string;
 };
+
+export type Project = {
+    title: string;
+    description: string;
+    tags: string[];
+    image: string;
+    liveUrl?: string;
+    githubUrl?: string;
+}
