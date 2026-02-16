@@ -201,5 +201,6 @@ export const projects: Project[] = [
         title: 'Depression Prediction Platform – MindWatch',
         description: '• Designed complete end-to-end UI/UX, including information architecture, user flows, wireframes, and high-fidelity prototypes.\n• Developed a consistent design system with structured layouts, typography, color schemes, and reusable UI components.\n• Contributed to React.js frontend development, building responsive, component-based interfaces.\n• Implemented reusable UI components and optimized performance for seamless cross-device experience.\n• Collaborated with stakeholders to translate product requirements into scalable, user-centered solutions.',
         tags: ['UI/UX Design', 'React.js', 'Web Platform Development', 'Design Systems', 'Responsive Design', 'Usability & Accessibility'],
+        githubUrl: 'https://github.com/Drashti1605/Depression-Predication',
     }
 ];
