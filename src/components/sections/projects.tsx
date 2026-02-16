@@ -31,7 +31,7 @@ const Projects = () => {
         </div>
 
         <div>
-          {isTerminalMode ? <ProjectTerminal /> : <ProjectGrid />}
+          {isTerminalMode ? <ProjectTerminal onExit={() => setIsTerminalMode(false)} /> : <ProjectGrid />}
         </div>
       </div>
     </section>
