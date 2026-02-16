@@ -50,6 +50,10 @@ const Projects = () => {
               }}
               className="w-full max-w-xs sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl mx-auto"
             >
+              <div className="flex justify-end gap-2 mb-4">
+                <CarouselPrevious className="hidden sm:flex !relative !top-auto !left-auto !translate-y-0" />
+                <CarouselNext className="hidden sm:flex !relative !top-auto !right-auto !translate-y-0" />
+              </div>
               <CarouselContent className="-ml-4">
                 {projects.map((project, index) => (
                   <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
@@ -59,8 +63,6 @@ const Projects = () => {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="hidden sm:flex" />
-              <CarouselNext className="hidden sm:flex" />
             </Carousel>
           )}
         </div>
