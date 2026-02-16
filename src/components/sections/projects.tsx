@@ -54,9 +54,9 @@ const Projects = () => {
                 <CarouselPrevious className="hidden sm:flex !relative !top-auto !left-auto !translate-y-0" />
                 <CarouselNext className="hidden sm:flex !relative !top-auto !right-auto !translate-y-0" />
               </div>
-              <CarouselContent className="-ml-4">
+              <CarouselContent className="-ml-6">
                 {projects.map((project, index) => (
-                  <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <CarouselItem key={index} className="pl-6 md:basis-1/2 lg:basis-1/3">
                      <div className="h-full">
                         <ProjectCard project={project} />
                      </div>
