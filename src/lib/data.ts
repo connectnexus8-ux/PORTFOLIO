@@ -196,5 +196,10 @@ export const projects: Project[] = [
         description: '• Designed and developed a user-friendly web application that enables users to easily create, customize, and export professional resumes.\n• Created intuitive UI flows for resume creation, editing, and template selection to ensure a smooth and guided user experience.\n• Implemented multiple industry-specific resume templates, allowing users to generate personalized and visually appealing resumes.\n• Developed core features including PDF export functionality, profile image upload, and dark mode support for enhanced usability.\n• Built responsive, component-based interfaces using React.js, ensuring cross-device compatibility and optimized performance.\n• Integrated modern UI frameworks like Bootstrap and Chakra UI to maintain consistency, scalability, and clean visual design.\n• Collaborated on routing, navigation structure, and overall application architecture using React Router.',
         tags: ['UI/UX Design', 'React.js', 'Bootstrap', 'Chakra UI', 'React Router', 'React Icons', 'PDF Generation'],
         githubUrl: 'https://github.com/Drashti1605/Resume-Builder',
+    },
+    {
+        title: 'Depression Prediction Platform – MindWatch',
+        description: '• Designed complete end-to-end UI/UX, including information architecture, user flows, wireframes, and high-fidelity prototypes.\n• Developed a consistent design system with structured layouts, typography, color schemes, and reusable UI components.\n• Contributed to React.js frontend development, building responsive, component-based interfaces.\n• Implemented reusable UI components and optimized performance for seamless cross-device experience.\n• Collaborated with stakeholders to translate product requirements into scalable, user-centered solutions.',
+        tags: ['UI/UX Design', 'React.js', 'Web Platform Development', 'Design Systems', 'Responsive Design', 'Usability & Accessibility'],
     }
 ];
