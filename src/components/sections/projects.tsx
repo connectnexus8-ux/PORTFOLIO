@@ -15,6 +15,13 @@ import {
 } from "@/components/ui/carousel";
 
 
+const colorCycle = [
+    { hsl: 'var(--primary)' },
+    { hsl: 'var(--accent)' },
+    { hsl: '336 83% 61%' },
+];
+
+
 const Projects = () => {
   const [isTerminalMode, setIsTerminalMode] = useState(false);
 
@@ -54,14 +61,17 @@ const Projects = () => {
                 <CarouselPrevious className="hidden sm:flex !relative !top-auto !left-auto !translate-y-0" />
                 <CarouselNext className="hidden sm:flex !relative !top-auto !right-auto !translate-y-0" />
               </div>
-              <CarouselContent className="-ml-6">
-                {projects.map((project, index) => (
-                  <CarouselItem key={index} className="pl-6 md:basis-1/2 lg:basis-1/3">
-                     <div className="h-full">
-                        <ProjectCard project={project} />
-                     </div>
-                  </CarouselItem>
-                ))}
+              <CarouselContent className="-ml-8">
+                {projects.map((project, index) => {
+                  const { hsl } = colorCycle[index % colorCycle.length];
+                  return (
+                    <CarouselItem key={index} className="pl-8 md:basis-1/2 lg:basis-1/3">
+                      <div className="h-full">
+                          <ProjectCard project={project} glowHsl={hsl} />
+                      </div>
+                    </CarouselItem>
+                  )
+                })}
               </CarouselContent>
             </Carousel>
           )}

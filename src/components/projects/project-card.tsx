@@ -2,26 +2,28 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Github } from 'lucide-react';
 import { type Project } from '@/lib/types';
+import AnimatedSkillCard from '@/components/ui/animated-skill-card';
 
 interface ProjectCardProps {
   project: Project;
+  glowHsl: string;
 }
 
-const ProjectCard = ({ project }: ProjectCardProps) => {
+const ProjectCard = ({ project, glowHsl }: ProjectCardProps) => {
   const isBulleted = project.description.includes('•');
 
   return (
-    <Card className="group flex h-full flex-col transition-all duration-300 ease-out hover:shadow-lg hover:-translate-y-1">
+    <AnimatedSkillCard glowHsl={glowHsl}>
       <CardHeader>
         <CardTitle>{project.title}</CardTitle>
       </CardHeader>
       <CardContent className="flex-grow">
-        <div className="relative max-h-40 overflow-hidden transition-all duration-500 ease-in-out group-hover:max-h-[1000px]">
+        <div className="relative max-h-32 overflow-hidden transition-all duration-500 ease-in-out group-hover:max-h-[1000px]">
           {isBulleted ? (
             <ul className="text-muted-foreground list-disc space-y-2 pl-5 text-sm">
               {project.description
@@ -61,7 +63,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           </Button>
         )}
       </CardFooter>
-    </Card>
+    </AnimatedSkillCard>
   );
 };
 
