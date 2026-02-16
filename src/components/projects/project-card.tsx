@@ -11,13 +11,27 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
+  const isBulleted = project.description.includes('•');
+
   return (
     <Card className="flex flex-col overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
       <CardHeader>
         <CardTitle>{project.title}</CardTitle>
       </CardHeader>
       <CardContent className="flex-grow">
-        <p className="text-muted-foreground">{project.description}</p>
+        {isBulleted ? (
+           <ul className="text-muted-foreground list-disc space-y-2 pl-5 text-sm">
+            {project.description
+              .split('• ')
+              .filter((item) => item.trim() !== '')
+              .map((item, index) => (
+                <li key={index}>{item.trim().replace(/\n$/, '')}</li>
+              ))}
+          </ul>
+        ) : (
+          <p className="text-muted-foreground">{project.description}</p>
+        )}
+
         <div className="mt-4 flex flex-wrap gap-2">
           {project.tags.map((tag) => (
             <Badge key={tag} variant="secondary">{tag}</Badge>
