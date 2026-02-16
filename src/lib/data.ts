@@ -203,5 +203,11 @@ export const projects: Project[] = [
         description: '• Designed complete end-to-end UI/UX, including information architecture, user flows, wireframes, and high-fidelity prototypes.\n• Developed a consistent design system with structured layouts, typography, color schemes, and reusable UI components.\n• Contributed to React.js frontend development, building responsive, component-based interfaces.\n• Implemented reusable UI components and optimized performance for seamless cross-device experience.\n• Collaborated with stakeholders to translate product requirements into scalable, user-centered solutions.',
         tags: ['UI/UX Design', 'React.js', 'Web Platform Development', 'Design Systems', 'Responsive Design', 'Usability & Accessibility'],
         githubUrl: 'https://github.com/Drashti1605/Depression-Predication',
+    },
+    {
+        title: 'CO₂ Emission Calculator – Web Platform',
+        description: '• Designed complete UI/UX experience, including layout structure, input flows, and result visualization screens.\n• Created clean and intuitive interface patterns to simplify complex environmental data interpretation.\n• Developed responsive front-end interface using modern web technologies.\n• Implemented interactive calculation logic and result display components.\n• Focused on usability, accessibility, and clear data presentation to enhance user understanding.',
+        tags: ['UI/UX Design', 'Web Interface Development', 'Responsive Design', 'Data Visualization UI', 'User-Centered Design', 'Sustainability-Focused Product Design'],
+        githubUrl: 'https://github.com/Drashti1605/CO2-Emission-Calculator',
     }
 ];
