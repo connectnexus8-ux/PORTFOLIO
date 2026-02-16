@@ -21,7 +21,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         <CardTitle>{project.title}</CardTitle>
       </CardHeader>
       <CardContent className="flex-grow">
-        <div className="relative max-h-60 overflow-hidden transition-all duration-500 ease-in-out group-hover:max-h-[1000px]">
+        <div className="relative max-h-40 overflow-hidden transition-all duration-500 ease-in-out group-hover:max-h-[1000px]">
           {isBulleted ? (
             <ul className="text-muted-foreground list-disc space-y-2 pl-5 text-sm">
               {project.description
@@ -34,7 +34,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           ) : (
             <p className="text-muted-foreground">{project.description}</p>
           )}
-          <div className="absolute bottom-0 h-16 w-full bg-gradient-to-t from-card to-transparent group-hover:hidden" />
+          <div className="absolute bottom-0 h-12 w-full bg-gradient-to-t from-card to-transparent group-hover:hidden" />
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2">
