@@ -163,8 +163,8 @@ export const projects: Project[] = [
         tags: ['UI/UX Design', 'React.js', 'Admin Platform', 'CMS', 'Authentication'],
     },
     {
-        title: 'Animal BBRC Management Website',
-        description: '• Designed end-to-end UI/UX for data monitoring dashboards, workflows, and reporting interfaces.\n• Created intuitive layouts to simplify complex data visualization.\n• Contributed to front-end development (~50%) using React.js and REST API integrations.\n• Ensured consistent design patterns, scalability, and responsive performance.',
+        title: 'Animal BBRC Management Website & App Design',
+        description: '• Led end-to-end UI/UX design for the Animal BBRC Management Website, focusing on building efficient data monitoring dashboards, workflow management systems, and reporting interfaces tailored for operational use.\n• Designed structured information architecture, user flows, wireframes, and high-fidelity UI layouts to simplify complex datasets and enable quick decision-making for administrators.\n• Created intuitive data visualization interfaces using clear visual hierarchies, charts, tables, and status indicators to make large volumes of operational data easy to understand and actionable.\n• Contributed around 50% to front-end development using React.js, implementing responsive layouts, reusable components, and integrating REST APIs for real-time data handling.\n• Ensured consistent design systems and UI patterns, maintaining scalability, usability, and seamless performance across different screen sizes and devices.\n• Focused on dashboard design, workflow optimization, responsive web application design, and performance-driven UI implementation to support smooth day-to-day management operations.',
         tags: ['UI/UX Design', 'React.js', 'Dashboard', 'Data Visualization'],
     },
     {
