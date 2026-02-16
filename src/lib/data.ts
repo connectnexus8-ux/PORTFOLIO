@@ -159,8 +159,8 @@ export const projects: Project[] = [
         liveUrl: 'https://play.google.com/store/apps/details?id=com.aookly.networking&pcampaignid=web_share',
     },
     {
-        title: 'BKhetiBuddy Admin Panel',
-        description: 'Led UI/UX design and contributed significantly to the React.js frontend development of a responsive admin panel with structured dashboards, focusing on usability and performance.',
+        title: 'BKhetiBuddy – Admin Panel (Web & Mobile Platform)',
+        description: '• Led the complete UI/UX design for the BKhetiBuddy ecosystem, covering both the web application (admin panel) and mobile app interfaces, ensuring a consistent and user-centric design system across platforms.\n• For the Admin Web Platform, designed end-to-end user experiences including information architecture, user flows, wireframes, and high-fidelity prototypes focused on clarity, usability, and efficient task management for administrators.\n• Contributed significantly to the React.js frontend development, implementing responsive layouts, reusable UI components, and interactive dashboards to ensure optimal performance and seamless user experience across devices.\n• Designed and structured data-driven dashboards, enabling easy monitoring of agricultural operations, user management, analytics insights, and system workflows through intuitive visual hierarchies and clean UI patterns.\n• Collaborated closely with developers and stakeholders to translate complex business requirements into scalable design solutions, emphasizing accessibility, performance optimization, and maintainable design systems.\n• Key Skills & Areas: End-to-end UI/UX Design, React.js Frontend Contribution, Admin Panel & Dashboard Design, Responsive Web Application Design, Design Systems & Component Architecture, Usability & Performance Optimization.',
         tags: ['UI/UX Design', 'React.js', 'Admin Panel', 'Dashboards'],
         liveUrl: 'https://admin.prod.khetibuddy.com/admin/sys/auth/login',
     },
