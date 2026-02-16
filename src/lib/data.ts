@@ -166,7 +166,7 @@ export const projects: Project[] = [
     },
     {
         title: 'Banas Potato Farmer App & Web Platform',
-        description: 'Led UI/UX design and contributed to ~50% of the React.js development for a user-friendly and responsive app and web platform for potato farmers.',
+        description: '• Led the complete end-to-end UI/UX design for the BKhetiBuddy ecosystem, covering both the mobile application and admin web platform, ensuring a consistent and user-centric design system across all touchpoints.\n• Designed the Admin Web Platform experience from information architecture to user flows, wireframes, and high-fidelity prototypes, focusing on clarity, usability, and efficient task management for administrators.\n• Contributed extensively to React.js frontend development, building responsive layouts, reusable UI components, and interactive interfaces for seamless cross-device performance.\n• Created data-driven dashboards with clear visual hierarchies to simplify monitoring of agricultural operations, analytics insights, user management, and workflow tracking.\n• Collaborated closely with developers and stakeholders to translate complex business requirements into scalable, accessible, and performance-optimized design solutions.\n• Specialized in end-to-end UI/UX design, admin panel & dashboard design, responsive web applications, design systems, component architecture, and usability optimization.',
         tags: ['UI/UX Design', 'React.js', 'Web Platform', 'Agri-Tech'],
         liveUrl: 'https://play.google.com/store/apps/details?id=com.banaspotato.farmer&pcampaignid=web_share',
     }
