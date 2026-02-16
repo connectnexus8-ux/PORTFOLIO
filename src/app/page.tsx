@@ -6,6 +6,7 @@ import Projects from '@/components/sections/projects';
 import Skills from '@/components/sections/skills';
 import Achievements from '@/components/sections/achievements';
 import Contact from '@/components/sections/contact';
+import Experience from '@/components/sections/experience';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <About />
+        <Experience />
         <Skills />
         <Projects />
         <Achievements />

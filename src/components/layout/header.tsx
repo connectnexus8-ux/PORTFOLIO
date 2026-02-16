@@ -4,11 +4,12 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, User, Code, Trophy, Mail, FolderGit2 } from 'lucide-react';
+import { Menu, User, Code, Trophy, Mail, FolderGit2, Briefcase } from 'lucide-react';
 import { personalInfo } from '@/lib/data';
 
 const navLinks = [
   { href: '#about', label: 'About', icon: User },
+  { href: '#experience', label: 'Experience', icon: Briefcase },
   { href: '#skills', label: 'Skills', icon: Code },
   { href: '#projects', label: 'Projects', icon: FolderGit2 },
   { href: '#achievements', label: 'Achievements', icon: Trophy },
