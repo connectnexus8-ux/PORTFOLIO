@@ -2,23 +2,21 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Github } from 'lucide-react';
 import { type Project } from '@/lib/types';
-import AnimatedSkillCard from '@/components/ui/animated-skill-card';
 
 interface ProjectCardProps {
   project: Project;
-  glowHsl: string;
 }
 
-const ProjectCard = ({ project, glowHsl }: ProjectCardProps) => {
+const ProjectCard = ({ project }: ProjectCardProps) => {
   const isBulleted = project.description.includes('•');
 
   return (
-    <AnimatedSkillCard glowHsl={glowHsl}>
+    <Card className="group flex h-full flex-col overflow-hidden border-border/50 bg-card/80 shadow-sm transition-all duration-300 ease-out hover:border-primary/20 hover:shadow-lg">
       <CardHeader>
         <CardTitle>{project.title}</CardTitle>
       </CardHeader>
@@ -63,7 +61,7 @@ const ProjectCard = ({ project, glowHsl }: ProjectCardProps) => {
           </Button>
         )}
       </CardFooter>
-    </AnimatedSkillCard>
+    </Card>
   );
 };
 
