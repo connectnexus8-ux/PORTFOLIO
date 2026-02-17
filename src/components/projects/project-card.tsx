@@ -18,7 +18,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <Card className="group flex h-full flex-col overflow-hidden border-border/50 bg-card/80 shadow-sm transition-all duration-300 ease-out hover:border-primary/20 hover:shadow-lg">
       <CardHeader>
-        <CardTitle>{project.title}</CardTitle>
+        <CardTitle className="leading-snug">{project.title}</CardTitle>
       </CardHeader>
       <CardContent className="flex-grow">
         <div className="relative max-h-32 overflow-hidden transition-all duration-500 ease-in-out group-hover:max-h-[1000px]">
