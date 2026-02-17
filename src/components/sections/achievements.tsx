@@ -53,7 +53,7 @@ const certifications = [
 ];
 
 const Achievements = () => {
-    const [openItem, setOpenItem] = React.useState('item-0');
+    const [openItem, setOpenItem] = React.useState('');
     return (
         <section id="achievements" className="bg-muted/20 py-24 sm:py-32">
             <div className="container mx-auto px-4 md:px-6">
@@ -77,10 +77,13 @@ const Achievements = () => {
                                 value={`item-${index}`}
                                 className="border-b-0"
                             >
-                                <Card className="mb-4 overflow-hidden border-border/50 bg-card/80 shadow-sm transition-all duration-300 ease-out has-[[data-state=open]]:border-primary/20 has-[[data-state=open]]:shadow-lg">
+                                <Card 
+                                    className="mb-4 overflow-hidden border-border/50 bg-card/80 shadow-sm transition-all duration-300 ease-out has-[[data-state=open]]:border-primary/20 has-[[data-state=open]]:shadow-lg"
+                                    onMouseEnter={() => setOpenItem(`item-${index}`)}
+                                    onMouseLeave={() => setOpenItem('')}
+                                >
                                     <AccordionTrigger 
                                         className="p-6 text-left hover:no-underline"
-                                        onMouseEnter={() => setOpenItem(`item-${index}`)}
                                     >
                                         <div className="flex w-full items-start gap-4">
                                             <div className="mt-1 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
