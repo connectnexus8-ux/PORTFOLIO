@@ -8,7 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { Building, Calendar, MapPin } from 'lucide-react';
 
 const Experience = () => {
-  const [openItem, setOpenItem] = useState('item-0');
+  const [openItem, setOpenItem] = useState('');
 
   return (
     <section id="experience" className="bg-background py-24 sm:py-32">
@@ -36,6 +36,7 @@ const Experience = () => {
                 value={`item-${index}`}
                 className="border-b-0"
                 onMouseEnter={() => setOpenItem(`item-${index}`)}
+                onMouseLeave={() => setOpenItem('')}
               >
                 <Card className="mb-4 overflow-hidden border-border/50 bg-card/80 shadow-sm transition-all duration-300 ease-out has-[[data-state=open]]:border-primary/20 has-[[data-state=open]]:shadow-lg">
                   <AccordionTrigger className="p-6 text-left hover:no-underline">
