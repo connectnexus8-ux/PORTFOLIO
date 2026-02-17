@@ -62,7 +62,6 @@ const ProjectTerminal = ({ onExit }: ProjectTerminalProps) => {
     "Welcome! Type 'help' to see available commands.",
     "Try 'ls' to list my projects or 'animate' for a surprise!",
   ]);
-  const [isAnimating, setIsAnimating] = useState(false);
   const [theme, setTheme] = useState('dark');
   const inputRef = useRef<HTMLInputElement>(null);
   const terminalBodyRef = useRef<HTMLDivElement>(null);
@@ -72,6 +71,13 @@ const ProjectTerminal = ({ onExit }: ProjectTerminalProps) => {
       terminalBodyRef.current.scrollTop = terminalBodyRef.current.scrollHeight;
     }
   }, [history]);
+
+  useEffect(() => {
+    // Cleanup function to remove class if component unmounts
+    return () => {
+        document.body.classList.remove('is-animating');
+    }
+  }, []);
 
   const handleFocus = () => {
     inputRef.current?.focus();
@@ -143,9 +149,9 @@ const ProjectTerminal = ({ onExit }: ProjectTerminalProps) => {
         setInput('');
         return;
       case 'animate':
-        setIsAnimating(true);
         newHistory.push('Starting animation...');
-        setTimeout(() => setIsAnimating(false), 5000);
+        document.body.classList.add('is-animating');
+        setTimeout(() => document.body.classList.remove('is-animating'), 5000);
         break;
       default:
         if (input.trim() === '') {
@@ -165,11 +171,6 @@ const ProjectTerminal = ({ onExit }: ProjectTerminalProps) => {
         onClick={handleFocus}
         style={themes[theme as keyof typeof themes] as React.CSSProperties}
     >
-      {isAnimating && (
-        <div className="absolute inset-0 z-20 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="w-20 h-20 border-4 border-t-cyan-400 border-r-fuchsia-500 border-b-purple-500 border-l-transparent rounded-full animate-spin"></div>
-        </div>
-      )}
       <div className="flex items-center p-3 rounded-t-lg" style={{ backgroundColor: 'var(--header-bg)'}}>
         <div className="flex gap-2">
           <div className="w-3 h-3 bg-red-500 rounded-full"></div>
