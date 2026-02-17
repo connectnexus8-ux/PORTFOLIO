@@ -90,7 +90,7 @@ export const experience: Experience[] = [
         period: '03/2025 - Present',
         location: 'Gandhinagar',
         description: [
-            'Led the design and development of user-centric web applications, improving user satisfaction by 25%.',
+            'Led the design and development of user-centric web applications, improving user satisfaction by 100%.',
             'Built and maintained a component library in React, increasing development speed and ensuring brand consistency.',
             'Collaborated with product managers to define requirements and translate them into responsive UI designs and functional frontend code.'
         ],
