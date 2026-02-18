@@ -97,7 +97,7 @@ const Contact = () => {
                         <CardTitle className="text-2xl">Connect With Me</CardTitle>
                         <CardDescription>Reach out through social media or direct contact.</CardDescription>
                     </CardHeader>
-                    <CardContent className="space-y-4">
+                    <CardContent className="space-y-2">
                         <Link href={personalInfo.socials.linkedin} target="_blank" rel="noopener noreferrer">
                             <Card className="p-4 flex items-center gap-4 hover:bg-muted/50 transition-colors cursor-pointer">
                                 <Linkedin className="h-6 w-6 text-primary" />
