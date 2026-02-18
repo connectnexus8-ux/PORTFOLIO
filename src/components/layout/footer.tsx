@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin } from 'lucide-react';
 import { personalInfo } from '@/lib/data';
 
 const Footer = () => {
@@ -16,9 +16,6 @@ const Footer = () => {
           </Link>
           <Link href={personalInfo.socials.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <Linkedin className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
-          </Link>
-          <Link href={`mailto:${personalInfo.email}`} aria-label="Email">
-            <Mail className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
           </Link>
         </div>
       </div>

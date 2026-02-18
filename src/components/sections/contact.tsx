@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
 import { sendEmailAction, type ContactState } from '@/app/actions';
 import { useToast } from '@/hooks/use-toast';
-import { Loader2, Send, Linkedin, Github, Mail, Download } from 'lucide-react';
+import { Loader2, Send, Linkedin, Github, Download } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { personalInfo } from '@/lib/data';
 import Link from 'next/link';
@@ -108,12 +108,6 @@ const Contact = () => {
                             <Link href={personalInfo.socials.github} target="_blank" rel="noopener noreferrer">
                                 <Github className="mr-3 h-5 w-5" />
                                 GitHub
-                            </Link>
-                        </Button>
-                        <Button asChild variant="destructive" className="w-full justify-start h-12 text-base px-4">
-                            <Link href={`mailto:${personalInfo.email}`}>
-                                <Mail className="mr-3 h-5 w-5" />
-                                Email
                             </Link>
                         </Button>
                     </CardContent>
