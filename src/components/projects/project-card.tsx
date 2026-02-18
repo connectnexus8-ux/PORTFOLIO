@@ -27,21 +27,19 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
     <Dialog>
       <Card className="group flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border-border/50 bg-card p-6 text-center shadow-sm transition-all duration-300 ease-out hover:border-primary/50 hover:shadow-lg">
         
-        <h3 className="text-2xl font-bold text-foreground transition-all duration-300 ease-in-out group-hover:mb-4 group-hover:-translate-y-2">{project.title}</h3>
+        <h3 className="text-2xl font-bold text-foreground">{project.title}</h3>
         
-        <div className="flex flex-col items-center gap-4 transition-all duration-300 ease-in-out max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 group-hover:delay-150">
-            <div className="flex flex-wrap justify-center gap-2">
-                {project.tags.slice(0, 3).map((tag) => (
-                <Badge key={tag} variant="secondary">{tag}</Badge>
-                ))}
-            </div>
-
-            <DialogTrigger asChild>
-                <Button variant="outline" className="mt-2">
-                    <Eye className="mr-2 h-4 w-4" /> View Details
-                </Button>
-            </DialogTrigger>
+        <div className="mt-4 flex flex-wrap justify-center gap-2">
+            {project.tags.slice(0, 3).map((tag) => (
+            <Badge key={tag} variant="secondary">{tag}</Badge>
+            ))}
         </div>
+
+        <DialogTrigger asChild>
+            <Button variant="outline" className="mt-4">
+                <Eye className="mr-2 h-4 w-4" /> View Details
+            </Button>
+        </DialogTrigger>
       </Card>
 
       <DialogContent className="max-w-3xl">
