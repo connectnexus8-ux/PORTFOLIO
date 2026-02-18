@@ -25,28 +25,22 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 
   return (
     <Dialog>
-      <Card className="group relative h-full w-full overflow-hidden rounded-lg border-border/50 bg-card shadow-sm transition-all duration-300 ease-out">
-        <div className="flex h-full w-full items-center justify-center bg-card p-6">
-           <h3 className="text-center text-2xl font-bold text-foreground">{project.title}</h3>
-        </div>
+      <Card className="group flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border-border/50 bg-card p-6 text-center shadow-sm transition-all duration-300 ease-out hover:border-primary/50 hover:shadow-lg">
         
-        <div className="absolute inset-0 flex flex-col justify-between bg-black/50 p-6 opacity-0 transition-opacity duration-500 group-hover:opacity-100 group-hover:backdrop-blur-sm">
-          <div className="flex-grow flex flex-col justify-center">
-            <h3 className="text-2xl font-bold leading-relaxed text-white">{project.title}</h3>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {project.tags.slice(0, 3).map((tag) => (
-                <Badge key={tag} variant="secondary" className="border-0 bg-white/20 text-white">{tag}</Badge>
-              ))}
+        <h3 className="text-2xl font-bold text-foreground transition-all duration-300 ease-in-out group-hover:mb-4 group-hover:-translate-y-2">{project.title}</h3>
+        
+        <div className="flex flex-col items-center gap-4 transition-all duration-300 ease-in-out max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 group-hover:delay-150">
+            <div className="flex flex-wrap justify-center gap-2">
+                {project.tags.slice(0, 3).map((tag) => (
+                <Badge key={tag} variant="secondary">{tag}</Badge>
+                ))}
             </div>
-          </div>
 
-          <div className="flex justify-end gap-4">
             <DialogTrigger asChild>
-                <Button variant="outline" className="bg-transparent text-white hover:bg-white hover:text-black">
+                <Button variant="outline" className="mt-2">
                     <Eye className="mr-2 h-4 w-4" /> View Details
                 </Button>
             </DialogTrigger>
-          </div>
         </div>
       </Card>
 
