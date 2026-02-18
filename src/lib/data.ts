@@ -13,7 +13,7 @@ export const personalInfo: PersonalInfo = {
         'User Experience Engineering Senior Manager'
     ],
     location: 'Ahmedabad, India',
-    email: 'drashtikhanpara@example.com',
+    email: 'khanparadrashti1605@gmail.com',
     phone: '+91 1234567890',
     summary: `I am a senior UI/UX and Front-End professional with a strong balance of design thinking, engineering expertise, and leadership experience, focused on building scalable, user-centered digital products.
 I bring hands-on experience across UX architecture, interface design, and front-end development, translating complex business and user requirements into intuitive, high-performance solutions. From research and journey mapping to interaction design and modern front-end implementation, I ensure consistency, accessibility, and usability across platforms.
