@@ -44,9 +44,9 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           </div>
         )}
         
-        <div className="absolute inset-0 flex flex-col bg-black/50 p-6 opacity-0 transition-opacity duration-500 group-hover:opacity-100 group-hover:backdrop-blur-sm">
-          <div className="flex-1">
-            <h3 className="text-2xl font-bold text-white">{project.title}</h3>
+        <div className="absolute inset-0 flex flex-col justify-center bg-black/50 p-6 opacity-0 transition-opacity duration-500 group-hover:opacity-100 group-hover:backdrop-blur-sm">
+          <div>
+            <h3 className="text-2xl font-bold leading-relaxed text-white">{project.title}</h3>
             <div className="mt-4 flex flex-wrap gap-2">
               {project.tags.slice(0, 3).map((tag) => (
                 <Badge key={tag} variant="secondary" className="border-0 bg-white/20 text-white">{tag}</Badge>
@@ -54,7 +54,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             </div>
           </div>
 
-          <div className="flex justify-end gap-4">
+          <div className="absolute bottom-6 right-6 flex justify-end gap-4">
             <DialogTrigger asChild>
                 <Button variant="outline" className="bg-transparent text-white hover:bg-white hover:text-black">
                     <Eye className="mr-2 h-4 w-4" /> View Details
