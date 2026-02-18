@@ -97,31 +97,25 @@ const Contact = () => {
                         <CardTitle className="text-2xl">Connect With Me</CardTitle>
                         <CardDescription>Reach out through social media or direct contact.</CardDescription>
                     </CardHeader>
-                    <CardContent className="space-y-2">
-                        <Link href={personalInfo.socials.linkedin} target="_blank" rel="noopener noreferrer">
-                            <Card className="p-4 flex items-center gap-4 hover:bg-muted/50 transition-colors cursor-pointer">
-                                <Linkedin className="h-6 w-6 text-primary" />
-                                <div>
-                                    <h4 className="font-semibold">LinkedIn</h4>
-                                </div>
-                            </Card>
-                        </Link>
-                         <Link href={personalInfo.socials.github} target="_blank" rel="noopener noreferrer">
-                            <Card className="p-4 flex items-center gap-4 hover:bg-muted/50 transition-colors cursor-pointer">
-                                <Github className="h-6 w-6 text-primary" />
-                                <div>
-                                    <h4 className="font-semibold">GitHub</h4>
-                                </div>
-                            </Card>
-                        </Link>
-                        <Link href={`mailto:${personalInfo.email}`}>
-                            <Card className="p-4 flex items-center gap-4 hover:bg-muted/50 transition-colors cursor-pointer">
-                                <Mail className="h-6 w-6 text-primary" />
-                                <div>
-                                    <h4 className="font-semibold">Email</h4>
-                                </div>
-                            </Card>
-                        </Link>
+                    <CardContent className="flex flex-col gap-3">
+                        <Button asChild className="w-full justify-start h-12 text-base bg-sky-700 hover:bg-sky-600 text-white px-4">
+                            <Link href={personalInfo.socials.linkedin} target="_blank" rel="noopener noreferrer">
+                                <Linkedin className="mr-3 h-5 w-5" />
+                                LinkedIn
+                            </Link>
+                        </Button>
+                        <Button asChild variant="secondary" className="w-full justify-start h-12 text-base px-4">
+                            <Link href={personalInfo.socials.github} target="_blank" rel="noopener noreferrer">
+                                <Github className="mr-3 h-5 w-5" />
+                                GitHub
+                            </Link>
+                        </Button>
+                        <Button asChild variant="destructive" className="w-full justify-start h-12 text-base px-4">
+                            <Link href={`mailto:${personalInfo.email}`}>
+                                <Mail className="mr-3 h-5 w-5" />
+                                Email
+                            </Link>
+                        </Button>
                     </CardContent>
                 </Card>
                 
