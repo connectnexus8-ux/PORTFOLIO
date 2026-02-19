@@ -53,7 +53,6 @@ const certifications = [
 ];
 
 const Achievements = () => {
-    const [openItem, setOpenItem] = React.useState('');
     return (
         <section id="achievements" className="bg-muted/20 py-24 sm:py-32">
             <div className="container mx-auto px-4 md:px-6">
@@ -68,8 +67,6 @@ const Achievements = () => {
                         type="single"
                         collapsible
                         className="w-full"
-                        value={openItem}
-                        onValueChange={(value) => setOpenItem(value ?? '')}
                     >
                         {certifications.map((cert, index) => (
                             <AccordionItem
@@ -79,8 +76,6 @@ const Achievements = () => {
                             >
                                 <Card 
                                     className="mb-4 overflow-hidden border-border/50 bg-card/80 shadow-sm transition-all duration-300 ease-out has-[[data-state=open]]:border-primary/20 has-[[data-state=open]]:shadow-lg"
-                                    onMouseEnter={() => setOpenItem(`item-${index}`)}
-                                    onMouseLeave={() => setOpenItem('')}
                                 >
                                     <AccordionTrigger 
                                         className="p-6 text-left hover:no-underline"
