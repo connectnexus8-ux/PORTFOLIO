@@ -25,7 +25,7 @@ const Contact = () => {
                 <Card>
                     <CardHeader>
                         <CardTitle className="text-2xl">Connect With Me</CardTitle>
-                        <CardDescription>Reach out through social media or direct contact.</CardDescription>
+                        <CardDescription>Reach out through social media.</CardDescription>
                     </CardHeader>
                     <CardContent className="flex flex-col gap-3">
                         <Button asChild className="w-full justify-start h-12 text-base bg-sky-700 hover:bg-sky-600 text-white px-4">
@@ -50,7 +50,7 @@ const Contact = () => {
                     </CardHeader>
                     <CardContent>
                         <Button asChild className="w-full bg-gradient-to-r from-cyan-400 to-purple-500 text-white">
-                            <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                            <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer" download>
                                 <Download className="mr-2 h-4 w-4" />
                                 Download Resume
                             </Link>
