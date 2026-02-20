@@ -6,14 +6,6 @@ import { Label } from '@/components/ui/label';
 import ProjectTerminal from '@/components/projects/project-terminal';
 import { projects } from '@/lib/data';
 import ProjectCard from '@/components/projects/project-card';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-
 
 const Projects = () => {
   const [isTerminalMode, setIsTerminalMode] = useState(true);
@@ -43,29 +35,13 @@ const Projects = () => {
           {isTerminalMode ? (
             <ProjectTerminal onExit={() => setIsTerminalMode(false)} />
           ) : (
-            <Carousel
-              opts={{
-                align: "start",
-                loop: true,
-              }}
-              className="w-full max-w-xs sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl mx-auto"
-            >
-              <div className="flex justify-end gap-2 mb-4">
-                <CarouselPrevious className="hidden sm:flex !relative !top-auto !left-auto !translate-y-0" />
-                <CarouselNext className="hidden sm:flex !relative !top-auto !right-auto !translate-y-0" />
-              </div>
-              <CarouselContent className="-ml-8">
-                {projects.map((project, index) => {
-                  return (
-                    <CarouselItem key={index} className="pl-8 md:basis-1/2 lg:basis-1/3">
-                      <div className="h-[400px]">
-                          <ProjectCard project={project} />
-                      </div>
-                    </CarouselItem>
-                  )
-                })}
-              </CarouselContent>
-            </Carousel>
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+              {projects.map((project, index) => (
+                <div key={index} className="h-[400px]">
+                  <ProjectCard project={project} />
+                </div>
+              ))}
+            </div>
           )}
         </div>
       </div>
