@@ -3,6 +3,13 @@
 import React from 'react';
 import { experience, education } from '@/lib/data';
 import { Briefcase, GraduationCap } from 'lucide-react';
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardHeader,
+    CardTitle,
+} from '@/components/ui/card';
 
 const Experience = () => {
   const timelineItems = [
@@ -23,34 +30,44 @@ const Experience = () => {
         </div>
 
         <div className="relative mx-auto max-w-3xl">
-          <div className="absolute left-4 top-0 h-full w-0.5 bg-border -translate-x-1/2"></div>
-          <div className="space-y-10">
+          <div className="absolute left-5 top-0 h-full w-0.5 bg-border -translate-x-1/2"></div>
+          <div className="space-y-8">
             {timelineItems.map((item, index) => (
-              <div key={index} className="relative pl-12">
-                <div className="absolute -left-0 top-0 flex h-8 w-8 items-center justify-center rounded-full bg-background border-2 border-primary">
+              <div key={index} className="relative">
+                <div className="absolute left-5 top-0 flex h-10 w-10 -translate-x-1/2 items-center justify-center rounded-full bg-background border-2 border-primary">
                   {item.type === 'experience' ? (
-                    <Briefcase className="h-4 w-4 text-primary" />
+                    <Briefcase className="h-5 w-5 text-primary" />
                   ) : (
-                    <GraduationCap className="h-4 w-4 text-primary" />
+                    <GraduationCap className="h-5 w-5 text-primary" />
                   )}
                 </div>
-                <div>
-                    <p className="text-sm font-medium text-primary">{item.period}</p>
-                    <h3 className="mt-1 text-xl font-semibold text-foreground">
-                        {item.type === 'experience' ? item.role : item.degree}
-                    </h3>
-                    <p className="mt-1 text-base text-muted-foreground">
-                        {item.type === 'experience' ? `${item.company} - ${item.location}` : item.institution}
-                    </p>
-                    {item.type === 'experience' && item.description && item.description.length > 0 && (
-                        <div className="mt-4 text-muted-foreground">
-                            <ul className="list-disc space-y-2 pl-5">
-                                {item.description.map((point, i) => (
-                                <li key={i}>{point}</li>
-                                ))}
-                            </ul>
+                <div className="ml-16">
+                  <Card className="bg-card/50 border-border/50">
+                    <CardHeader>
+                      <div className="flex flex-col sm:flex-row justify-between sm:items-start gap-2">
+                        <div>
+                          <CardTitle className="text-xl">
+                            {item.type === 'experience' ? item.role : item.degree}
+                          </CardTitle>
+                          <CardDescription className="mt-1">
+                            {item.type === 'experience' ? `${item.company} - ${item.location}` : item.institution}
+                          </CardDescription>
                         </div>
+                        <div className="text-sm text-muted-foreground text-left sm:text-right flex-shrink-0 pt-1">
+                          {item.period}
+                        </div>
+                      </div>
+                    </CardHeader>
+                    {item.type === 'experience' && item.description && item.description.length > 0 && (
+                      <CardContent>
+                        <ul className="list-disc space-y-2 pl-5 text-sm text-muted-foreground">
+                          {item.description.map((point, i) => (
+                            <li key={i}>{point}</li>
+                          ))}
+                        </ul>
+                      </CardContent>
                     )}
+                  </Card>
                 </div>
               </div>
             ))}
