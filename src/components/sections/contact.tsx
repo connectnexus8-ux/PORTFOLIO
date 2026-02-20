@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Linkedin, Github, Download } from 'lucide-react';
+import { Linkedin, Github } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { personalInfo } from '@/lib/data';
 import Link from 'next/link';
@@ -38,21 +38,6 @@ const Contact = () => {
                             <Link href={personalInfo.socials.github} target="_blank" rel="noopener noreferrer">
                                 <Github className="mr-3 h-5 w-5" />
                                 GitHub
-                            </Link>
-                        </Button>
-                    </CardContent>
-                </Card>
-                
-                <Card>
-                    <CardHeader>
-                        <CardTitle className="text-2xl">Resume</CardTitle>
-                        <CardDescription>Download my resume for a detailed overview of my skills and experience.</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                        <Button asChild className="w-full bg-gradient-to-r from-cyan-400 to-purple-500 text-white">
-                            <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer" download>
-                                <Download className="mr-2 h-4 w-4" />
-                                Download Resume
                             </Link>
                         </Button>
                     </CardContent>
