@@ -35,6 +35,12 @@
       "description": "An image of the Banas Potato Farmer App",
       "imageUrl": "https://images.unsplash.com/photo-1768328584845-8ac70ae4bd81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmYXJtZXIlMjBwbGF0Zm9ybXxlbnwwfHx8fDE3NzEyMzI3Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "farmer platform"
+    },
+    {
+      "id": "drashti-cartoon-avatar",
+      "description": "A cartoon avatar of a business woman.",
+      "imageUrl": "https://storage.googleapis.com/aif-starlark-bins/project-112002-1721743171099.png",
+      "imageHint": "cartoon woman"
     }
   ]
 }

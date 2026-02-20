@@ -1,14 +1,14 @@
 import React from 'react';
 import { skills } from '@/lib/data';
 import { CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { Code2, GitFork, Microscope, Palette, ServerCog, Users } from 'lucide-react';
+import { CodeXml, GitFork, Microscope, Palette, ServerCog, Users } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import AnimatedSkillCard from '@/components/ui/animated-skill-card';
 
 const iconMap: Record<string, React.ElementType> = {
     'UX & Research': Microscope,
     'Design': Palette,
-    'Frontend': Code2,
+    'Frontend': CodeXml,
     'Development': ServerCog,
     'Tools & Collaboration': GitFork,
     'Collaboration': Users,
@@ -47,7 +47,7 @@ const Skills = () => {
 
         <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2 lg:grid-cols-3">
           {skills.map((category, index) => {
-            const Icon = iconMap[category.title] ?? Code2;
+            const Icon = iconMap[category.title] ?? CodeXml;
             const { text: textColor, bg: dotColor, hsl } = colorCycle[index % colorCycle.length];
             
             return (

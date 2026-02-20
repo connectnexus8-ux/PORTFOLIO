@@ -3,7 +3,7 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Linkedin } from 'lucide-react';
+import { Linkedin, Trophy } from 'lucide-react';
 import Link from 'next/link';
 
 const Achievements = () => {
@@ -17,12 +17,17 @@ const Achievements = () => {
                 </div>
 
                 <div className="mx-auto max-w-3xl">
-                    <Card>
-                        <CardContent className="p-6 text-center">
+                    <Card className="overflow-hidden border-2 border-primary/10 shadow-lg">
+                        <CardContent className="p-8 text-center">
+                            <div className="mb-6 flex justify-center">
+                                <div className="rounded-full bg-primary/10 p-4">
+                                    <Trophy className="h-10 w-10 text-primary" />
+                                </div>
+                            </div>
                             <p className="text-muted-foreground">
                                 Earned multiple professional certifications in UI/UX Design, Frontend Development, and Web Technologies, demonstrating strong expertise in user-centered design, modern interface tools, and practical implementation of responsive web applications. Recognized for continuous learning, skill development, and active contribution to real-world design and development projects.
                             </p>
-                            <Button asChild className="mt-6">
+                            <Button asChild className="mt-8">
                                 <Link href="https://www.linkedin.com/in/drashti-khanpara-3a3b83253/details/certifications/" target="_blank" rel="noopener noreferrer">
                                     <Linkedin className="mr-2 h-4 w-4" />
                                     View on LinkedIn

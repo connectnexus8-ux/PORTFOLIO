@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -15,6 +16,7 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 interface ProjectCardProps {
   project: Project;
@@ -22,25 +24,42 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   const isBulleted = project.description.includes('•');
+  const projectImage = PlaceHolderImages.find(p => p.id === project.image);
 
   return (
     <Dialog>
-      <Card className="group flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border-border/50 bg-card p-6 text-center shadow-sm transition-all duration-300 ease-out hover:border-primary/50 hover:shadow-lg">
-        
-        <h3 className="text-2xl font-bold text-foreground">{project.title}</h3>
-        
-        <div className="mt-4 flex flex-wrap justify-center gap-2">
-            {project.tags.slice(0, 3).map((tag) => (
-            <Badge key={tag} variant="secondary">{tag}</Badge>
-            ))}
-        </div>
+      <DialogTrigger asChild className="h-full w-full cursor-pointer">
+        <Card className="group relative flex h-full w-full flex-col justify-end overflow-hidden rounded-xl border-border/30 bg-card text-left shadow-lg transition-all duration-300 hover:shadow-2xl hover:border-primary/50">
+          {projectImage ? (
+            <Image
+              src={projectImage.imageUrl}
+              alt={project.title}
+              fill
+              className="object-cover transition-transform duration-500 group-hover:scale-110"
+              data-ai-hint={projectImage.imageHint}
+            />
+          ) : (
+            <div className="absolute inset-0 bg-gradient-to-br from-secondary to-card"></div>
+          )}
 
-        <DialogTrigger asChild>
-            <Button variant="outline" className="mt-4">
-                <Eye className="mr-2 h-4 w-4" /> View Details
-            </Button>
-        </DialogTrigger>
-      </Card>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+          
+          <div className="relative z-10 p-6 space-y-3">
+              <h3 className="text-2xl font-bold text-white drop-shadow-md">{project.title}</h3>
+              
+              <div className="flex flex-wrap gap-2">
+                  {project.tags.slice(0, 3).map((tag) => (
+                    <Badge key={tag} variant="secondary" className="bg-white/10 text-white backdrop-blur-sm border-none">{tag}</Badge>
+                  ))}
+              </div>
+
+              <div className="flex items-center gap-2 text-white/80 opacity-0 transition-opacity duration-300 group-hover:opacity-100 pt-2">
+                  <Eye className="h-5 w-5" />
+                  <span className="text-sm font-medium">View Details</span>
+              </div>
+          </div>
+        </Card>
+      </DialogTrigger>
 
       <DialogContent className="max-w-3xl">
         <DialogHeader>
