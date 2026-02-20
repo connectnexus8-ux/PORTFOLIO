@@ -14,9 +14,9 @@
     },
     {
       "id": "drashti-profile",
-      "description": "An avatar of a girl.",
-      "imageUrl": "https://storage.googleapis.com/aif-starlark-bins/project-112002-1721739502931.png",
-      "imageHint": "woman avatar"
+      "description": "An avatar of a business woman.",
+      "imageUrl": "https://images.unsplash.com/photo-1639747280804-dd2d6b3d883e?q=80&w=600&h=600&auto=format&fit=crop&ixlib=rb-4.0.3",
+      "imageHint": "business woman avatar"
     },
     {
       "id": "project-aookly",
