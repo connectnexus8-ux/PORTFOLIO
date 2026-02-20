@@ -58,7 +58,7 @@ const Contact = () => {
     const subject = `Message from ${name} via portfolio`;
     const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
     
-    const mailtoLink = `mailto:khanparadrashti1605@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoLink = `mailto:khanparadrashti@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
     window.location.href = mailtoLink;
     setLoading(false);
