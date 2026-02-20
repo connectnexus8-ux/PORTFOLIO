@@ -66,20 +66,20 @@ const About = () => {
                                             <div className="absolute left-6 top-0 h-full w-px bg-border"></div>
                                             <div className="space-y-8">
                                                 
-                                                {education.length > 0 && (
-                                                    <div className="relative pl-8">
+                                                {education.map((edu, index) => (
+                                                    <div key={`edu-${index}`} className="relative pl-8">
                                                         <div className="absolute left-0 top-1.5 flex h-10 w-10 -translate-x-1/2 items-center justify-center rounded-full bg-background">
                                                             <div className="flex h-6 w-6 items-center justify-center rounded-full bg-card text-primary">
                                                                 <GraduationCap className="h-4 w-4" />
                                                             </div>
                                                         </div>
                                                         <div>
-                                                            <p className="text-sm text-muted-foreground">{education[0].period}</p>
-                                                            <h4 className="font-semibold mt-1">{education[0].degree}</h4>
-                                                            <p className="text-sm text-muted-foreground">{education[0].institution}</p>
+                                                            <p className="text-sm text-muted-foreground">{edu.period}</p>
+                                                            <h4 className="font-semibold mt-1">{edu.degree}</h4>
+                                                            <p className="text-sm text-muted-foreground">{edu.institution}</p>
                                                         </div>
                                                     </div>
-                                                )}
+                                                ))}
 
                                                 {experience.map((job, index) => (
                                                     <div key={`job-${index}`} className="relative pl-8">

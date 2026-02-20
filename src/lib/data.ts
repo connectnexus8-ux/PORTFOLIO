@@ -3,23 +3,16 @@ import { type PersonalInfo, type SkillCategory, type Experience, type Achievemen
 export const personalInfo: PersonalInfo = {
     name: 'Drashti Khanpara',
     titles: [
-        'Senior ui/ux designer',
-        'Front-End Developer',
-        'UI Designer',
-        'UX Designer',
-        'Web Developer Associate',
+        'Senior UI/UX Designer & Front-End Developer',
+        'User Experience Architect',
+        'React.js Developer',
+        'Figma Specialist',
         'Service Designer',
-        'User Experience Architecture Senior Analyst',
-        'User Experience Engineering Senior Manager'
     ],
-    location: 'Ahmedabad, India',
-    email: 'khanparadrashti@gmail.com',
-    phone: '+91 1234567890',
-    summary: `I am a senior UI/UX and Front-End professional with a strong balance of design thinking, engineering expertise, and leadership experience, focused on building scalable, user-centered digital products.
-I bring hands-on experience across UX architecture, interface design, and front-end development, translating complex business and user requirements into intuitive, high-performance solutions. From research and journey mapping to interaction design and modern front-end implementation, I ensure consistency, accessibility, and usability across platforms.
-With a deep understanding of UX engineering principles, component-driven design systems, and modern web technologies, I collaborate closely with product, engineering, and stakeholder teams to bridge the gap between design vision and technical execution.
-In leadership and senior analyst roles, I drive experience strategy, mentor teams, define UX standards, and influence product direction through data-informed insights and design excellence. I focus on aligning user needs with business goals while scaling design and development processes efficiently.
-I believe exceptional experiences are created at the intersection of strategy, design, and technology, where thoughtful interactions, clean architecture, and strong execution come together to deliver meaningful impact.`,
+    location: 'Ahmedabad',
+    email: 'khanparadrashti1605@gmail.com',
+    phone: '+91 9033300167',
+    summary: `Senior UI/UX Designer & Front-End Developer with proven expertise in architecting intuitive, scalable, and user-centered digital experiences that align business objectives with user needs. Adept at the end-to-end product design lifecycle, including UX research, information architecture, interaction design, wireframing, and high-fidelity prototyping. Highly skilled in translating complex functional requirements into seamless user journeys, leveraging Figma-driven design systems and modern front-end frameworks such as React.js to ensure pixel-perfect implementation and consistency across platforms. Demonstrates strong competency in usability optimization, accessibility standards, and performance-focused front-end engineering, enabling the delivery of responsive, visually refined, and high-impact interfaces. Recognized for effectively collaborating with cross-functional stakeholders, bridging the gap between design and development, and driving data-informed design decisions that enhance user engagement, product efficiency, and overall digital experience quality.`,
     socials: {
         linkedin: 'https://www.linkedin.com/in/drashti-khanpara-3a3b83253/',
         github: 'https://github.com/Drashti1605',
@@ -30,19 +23,18 @@ export const skills: SkillCategory[] = [
   {
     title: 'UX & Research',
     skills: [
-      { name: 'UX Research & User Flows' },
       { name: 'UX Research' },
       { name: 'User Flow Design' },
-      { name: 'Wireframing' },
+      { name: 'Wireframing & Information Architecture' },
     ],
   },
   {
     title: 'Design',
     skills: [
-      { name: 'Interactive Prototyping' },
-      { name: 'UI Design' },
-      { name: 'Visual Design Systems' },
-      { name: 'Responsive Web Design' },
+      { name: 'Interactive Prototyping (Figma)' },
+      { name: 'UI Design & Visual Design Principles' },
+      { name: 'Responsive Design' },
+      { name: 'Component-Based UI Architecture' },
     ],
   },
   {
@@ -51,50 +43,49 @@ export const skills: SkillCategory[] = [
       { name: 'Frontend Development' },
       { name: 'HTML5' },
       { name: 'CSS3' },
-      { name: 'JavaScript' },
-      { name: 'React.js Fundamentals' },
+      { name: 'JavaScript (ES6)' },
+      { name: 'React.js Development' },
+      { name: 'Next.js Development' },
     ],
   },
   {
     title: 'Development',
     skills: [
-      { name: 'Component-Based UI Development' },
-      { name: 'API Integration' },
-      { name: 'REST APIs' },
+      { name: 'REST API Integration' },
       { name: 'Performance Optimization' },
     ],
   },
   {
     title: 'Tools & Collaboration',
     skills: [
-      { name: 'Version Control' },
-      { name: 'Git' },
-      { name: 'GitHub' },
-      { name: 'Problem Solving' },
-      { name: 'Debugging' },
-      { name: 'Collaboration with Designers' },
+      { name: 'Git & GitHub' },
+      { name: 'npm / Package Management' },
     ],
   },
     {
     title: 'Collaboration',
     skills: [
-      { name: 'Collaboration with Developers' },
+      { name: 'Cross-Functional Collaboration' },
+      { name: 'Agile / Team Workflow' },
     ],
   },
 ];
 
 export const experience: Experience[] = [
     {
-        company: 'AekAds',
+        company: 'Aek Ads',
         role: 'Sr. UI/UX developer & Front - End developer',
         period: '03/2025 - Present',
-        location: 'Gandhinagar',
+        location: 'Gandhinagar, India',
         description: [
-            'Led the design and development of user-centric web applications, improving user satisfaction by 100%.',
-            'Built and maintained a component library in React, increasing development speed and ensuring brand consistency.',
-            'Collaborated with product managers to define requirements and translate them into responsive UI designs and functional frontend code.'
+            'Led end-to-end UI/UX design and front-end development of scalable, high-traffic web interfaces using Figma, React.js, and TypeScript.',
+            'Translated complex product requirements into intuitive user flows, wireframes, and high-fidelity prototypes aligned with business goals.',
+            'Developed and maintained a comprehensive design system and reusable component library to ensure design consistency and faster delivery.',
+            'Collaborated closely with product managers, designers, and developers to refine UX strategies and improve usability.',
+            'Optimized front-end performance, accessibility WCAG, and responsive behavior to enhance overall user experience.',
+            'Ensured pixel-perfect implementation between Figma designs and production code.'
         ],
-        skills: ['UI/UX Design', 'Frontend Development', 'React.js', 'Design Systems', 'Figma']
+        skills: ['UI/UX Design', 'Frontend Development', 'React.js', 'TypeScript', 'Figma', 'Design Systems']
     },
     {
         company: 'Drop Techno Lab',
@@ -102,11 +93,13 @@ export const experience: Experience[] = [
         period: '07/2024 - 03/2025',
         location: 'Ahmedabad, India',
         description: [
-            'Designed and implemented responsive user interfaces for various client projects.',
-            'Created wireframes, mockups, and prototypes to communicate design ideas.',
-            'Worked closely with backend developers to integrate APIs and ensure seamless user experiences.'
+            'Designed user-centered interfaces through UX research, wireframing, and interactive prototyping using Figma.',
+            'Created scalable UI layouts aligned with modern design standards and usability principles.',
+            'Built responsive web components using React.js, JavaScript JSX, and modern CSS practices.',
+            'Collaborated with cross-functional teams to gather requirements and propose effective UI/UX solutions.',
+            'Maintained structured design files and documented user flows for efficient development handoff.'
         ],
-        skills: ['HTML/CSS', 'JavaScript', 'UI Design', 'Prototyping', 'API Integration']
+        skills: ['HTML/CSS', 'JavaScript', 'React.js', 'UI Design', 'Prototyping', 'Figma']
     }
 ];
 
@@ -115,40 +108,25 @@ export const education: Education[] = [
         institution: 'Gujarat Technological University GTU',
         degree: 'Bachelor of Engineering (BE), Information Technology',
         period: '2022 - 2026',
+    },
+    {
+        institution: 'Madhav International',
+        degree: 'HSC - Science',
+        period: '03/2022',
+    },
+    {
+        institution: 'Madhav Vidhya Sankul',
+        degree: 'SSC',
+        period: '03/2020',
     }
 ];
 
 export const achievements: Achievement[] = [
   {
-    title: 'Awwwards Site of the Day',
-    description: 'Recognized for outstanding UI/UX design on a client project, leading to increased user engagement by 40%.',
-    year: '2023',
-  },
-  {
-    title: 'Certified UX Professional',
-    description: 'Achieved certification from the Nielsen Norman Group, demonstrating expertise in user experience best practices.',
-    year: '2022',
-  },
-  {
-    title: 'Design Mentor',
-    description: 'Mentor aspiring designers on ADPList, helping them build their portfolios and navigate the design industry.',
+    title: 'Multiple Certifications',
+    description: 'Earned multiple professional certifications in UI/UX Design, Frontend Development, and Web Technologies, demonstrating strong expertise in user-centered design, modern interface tools, and practical implementation of responsive web applications. Recognized for continuous learning, skill development, and active contribution to real-world design and development projects.',
     year: 'Ongoing',
-  },
-  {
-    title: 'Service Designer',
-    description: 'Issued by Udemy.',
-    year: 'May 2024',
-  },
-  {
-    title: 'User Experience Architecture, Senior Analyst',
-    description: 'Issued by Accenture.',
-    year: 'May 2024',
-  },
-    {
-    title: 'User Experience Engineering, Senior Manager',
-    description: 'Issued by Accenture.',
-    year: 'May 2024',
-  },
+  }
 ];
 
 export const projects: Project[] = [
